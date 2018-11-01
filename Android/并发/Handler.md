@@ -78,7 +78,9 @@ Handler是Android类库提供的用于接受、传递和处理消息或Runnable�
 ````
 
 那么为什么要这样使用？  
+
 为什么在主线程使用的时候不需要`Looper.prepare();` 和 `Looper.loop();`？
+
 为什么在主线程 调用`handler.sendEmptyMessage(1);` `handler.postDelayed(task1, 10000);` 以及在子线程调用`handler.sendEmptyMessage(2);` `handler.postDelayed(task2, 20000);` 之后， 最后的处理在主线程中进行的？
 
 why？？
