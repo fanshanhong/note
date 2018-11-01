@@ -58,7 +58,7 @@ LruCache是个泛型类，它内部维护了一个LinkedHashMap以强引用的�
 ## LruCache原理
 LruCache的核心思想很好理解，就是要维护一个缓存对象链表，其中对象链表的排列方式是按照访问顺序实现的，即一直没访问的对象，将放在队头，即将被淘汰。而最近访问的对象将放在队尾，最后被淘汰。
 
-![](https://thumbnail0.baidupcs.com/thumbnail/97255e9508fc1af5e5eb2e1d5dfcafd2?fid=2265468443-250528-165032914333856&time=1536663600&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-eFJpPl2WiwU4QtpExN2rGTsGGTI%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=5886294429050973315&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
+![](https://github.com/fanshanhong/Note/blob/master/Android/LruCache/LruCache%E5%8E%9F%E7%90%86%E5%9B%BE.jpg)
 
 从图中可以看到， 当有新的缓存对象到来的时候(put)的时候, 不断从队尾加入。那么，队头的元素就是最老的元素了。 当队列满了的时候（即F进入的时候），队头的A就要被淘汰了（因为队头的元素就是那个最近一直没有访问的）。一旦访问了队列中的某个元素（比如元素C）， 那么就把该缓存对象重新移动到队尾， 只要独享被访问， 那么这个缓存的对象就相当于最新的， 暂时不会被淘汰。
 
