@@ -1,4 +1,4 @@
----
+
 ​---
 title: 把 ThreadLocal 原理说明白
 date: 2019-05-08 
@@ -11,11 +11,9 @@ tags:
      - 并发和多线程
  description: 
 ​---
----
 
 
-
-[TOC]
+<!-- TOC -->autoauto- [把 ThreadLocal 原理说明白](#把-threadlocal-原理说明白)auto    - [ThreadLocal 是什么?](#threadlocal-是什么)auto    - [ThreadLocal 源码分析](#threadlocal-源码分析)autoauto<!-- /TOC -->
 
 # 把 ThreadLocal 原理说明白
 
