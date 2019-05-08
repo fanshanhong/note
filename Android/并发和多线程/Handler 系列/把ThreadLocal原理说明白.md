@@ -1,22 +1,34 @@
 
-​---
-title: 把 ThreadLocal 原理说明白
+--- 
+
+title: 把 ThreadLocal 原理说明白 
+
 date: 2019-05-08 
+
 categories: 
-	- Android
-	- 并发和多线程
-	- Handler 系列
+    - Android - 并发和多线程 
+    - Handler 系列 
+    
 tags: 
-     - Android
-     - 并发和多线程
- description: 
-​---
+    - Android 
+    - 并发和多线程 
+
+description: ​
+
+---
 
 
-<!-- TOC -->autoauto- [把 ThreadLocal 原理说明白](#把-threadlocal-原理说明白)auto    - [ThreadLocal 是什么?](#threadlocal-是什么)auto    - [ThreadLocal 源码分析](#threadlocal-源码分析)autoauto<!-- /TOC -->
+
 
 # 把 ThreadLocal 原理说明白
 
+<!-- TOC -->
+
+- [把 ThreadLocal 原理说明白](#把-threadlocal-原理说明白)
+    - [ThreadLocal 是什么?](#threadlocal-是什么)
+    - [ThreadLocal 源码分析](#threadlocal-源码分析)
+
+<!-- /TOC -->
 
 
 ## ThreadLocal 是什么?
