@@ -78,7 +78,7 @@ fun2(){
 
 ## ThreadLocal 源码分析
 
-![ThreadLocal 方法列表](/Volumes/Mechanical/E/Note/work/Android/并发和多线程/Handler 系列/images/ThreadLocal 方法列表.png)
+![ThreadLocal 方法列表](./images/ThreadLocal 方法列表.png)
 
 
 
