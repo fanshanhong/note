@@ -144,7 +144,7 @@ Handler主要完成Message的入队（MessageQueue）和处理，下面将通过
                 "Can't create handler inside thread that has not called Looper.prepare()");
         }
         mQueue = mLooper.mQueue;
-	// callback默认为null
+        // callback默认为null
         mCallback = null;
     }
 
@@ -323,8 +323,9 @@ Handler的obtainMessage系列方法
      * @return Returns true if the Runnable was successfully placed in to the 
      *         message queue.  Returns false on failure, usually because the
      *         looper processing the message queue is exiting.
-	 	 *  如果这个runnable被成功放在messagequeue中， 则返回true 
-	   *  出错的话就返回false(那在什么情况下会出错呢，一般是正在退出的情况， 也就是在messagequeue中加入了一个target=null的message， looper死循环要停止了， 就返回 false）
+     *  如果这个runnable被成功放在messagequeue中， 则返回true 
+     *  出错的话就返回false(那在什么情况下会出错呢，一般是正在退出的情况， 也就是在messagequeue中加
+     了一个target=null的message， looper死循环要停止了， 就返回 false）
      */
     public final boolean post(Runnable r)
     {
@@ -353,9 +354,9 @@ Handler的obtainMessage系列方法
 我们看一下 `getPostMessage()`是如何将Runnable包装成Message的。
 
 ```java
-	/**
-	  * 将runnable对象封装成message对象
-	  */
+    /**
+    * 将runnable对象封装成message对象
+    */
     private final Message getPostMessage(Runnable r) {
         Message m = Message.obtain();
         m.callback = r;// 对message中的callback赋值为runnable
@@ -377,7 +378,7 @@ MessageQueue 的底层实现全部放在的native层。 我们主要分析 `bool
 
 
 ```java
-	// 将 msg 加入到 MessageQueue 中
+    // 将 msg 加入到 MessageQueue 中
     final boolean enqueueMessage(Message msg, long when) {
         // 在调用enqueueMessage()之前,     Message对象的when属性是不支持设置的.
         // Message的when属性要在下面设置.
@@ -404,15 +405,15 @@ MessageQueue 的底层实现全部放在的native层。 我们主要分析 `bool
                 mQuiting = true;
             }
 
-			// 如果 mQuiting == false && msg.target != null 才会走到这里
+            // 如果 mQuiting == false && msg.target != null 才会走到这里
 
-			// 这里给msg.when赋值, 也就是何时处理这个Message的时间
+            // 这里给msg.when赋值, 也就是何时处理这个Message的时间
             msg.when = when;
             //Log.d("MessageQueue", "Enqueing: " + msg);
             // 这个mMessages是队列的头
             Message p = mMessages;
 
-			// 如果队列是空的, 或者指定 的 当前正在入队的这个Message的执行时间是比队头的Message执行时间早, 那么当前的这个Message应该放在队头, 第一个被处理.
+            // 如果队列是空的, 或者指定 的 当前正在入队的这个Message的执行时间是比队头的Message执行时间早, 那么当前的这个Message应该放在队头, 第一个被处理.
             if (p == null || when == 0 || when < p.when) {
                 msg.next = p; // 把之前的队列接在当前的这个msg的屁股后面
                 mMessages = msg; // 更新头指针, 头指针指向当前的这个Message
@@ -423,7 +424,7 @@ MessageQueue 的底层实现全部放在的native层。 我们主要分析 `bool
                 // 队列不是空, 或者当前入队的这个msg不是放在队头的, 需要另外处理一下.
                 Message prev = null;
 
-				// 遍历链表, 找到当前msg应该插入的合适的位置.也是根据时间when来判断的.
+                // 遍历链表, 找到当前msg应该插入的合适的位置.也是根据时间when来判断的.
                 while (p != null && p.when <= when) {
                     prev = p;
                     p = p.next;
@@ -436,7 +437,7 @@ MessageQueue 的底层实现全部放在的native层。 我们主要分析 `bool
         if (needWake) { // 如果需要唤醒, 调用native层实现去唤醒.
             nativeWake(mPtr);
         }
-		// 执行到这里, 表示入队成功, 返回true.
+        // 执行到这里, 表示入队成功, 返回true.
         return true;
     }
 
@@ -453,13 +454,13 @@ MessageQueue 的底层实现全部放在的native层。 我们主要分析 `bool
 下面我们再看一下 是如何从队列中取出的
 
 ```java
-	// 从队列中取出Message对象
+    // 从队列中取出Message对象
     final Message next() {
         int pendingIdleHandlerCount = -1; // -1 only during first iteration
         int nextPollTimeoutMillis = 0;
 
-		// 死循环
-		// 这里没有用while(flag)的形式， 因为 while(flag)的形式，可以通过反射设置 flag 的值，进行控制循环，所以这里用了 for(;;)
+        // 死循环
+        // 这里没有用while(flag)的形式， 因为 while(flag)的形式，可以通过反射设置 flag 的值，进行控制循环，所以这里用了 for(;;)
         for (;;) {
             if (nextPollTimeoutMillis != 0) {
                 Binder.flushPendingCommands();
@@ -603,18 +604,18 @@ MessageQueue 的底层实现全部放在的native层。 我们主要分析 `bool
       * {@link #quit()}.
       */
       /** fan:
-		* 将当前线程初始化成为 一个 Looper线程 
-		* 在真正开始轮训之前， 给你提供一个机会, 让你创建handlers并且引用looper
-		* 
-		*/
+        * 将当前线程初始化成为 一个 Looper线程 
+        * 在真正开始轮训之前， 给你提供一个机会, 让你创建handlers并且引用looper
+        * 
+        */
     public static final void prepare() {
-   		// 如果没有调用 过prepare就返回null
-    	// 每个线程只能有一个looper
+        // 如果没有调用 过prepare就返回null
+        // 每个线程只能有一个looper
         if (sThreadLocal.get() != null) {
             throw new RuntimeException("Only one Looper may be created per thread");
         }
-		// 调用Looper的私有构造， 创建一个Looper对象， 放到threadlocal中
-		// 这里之所以要做成ThreadLocal是因为，prepare方法可能在不同的线程中调用，比如main线程，比如需要loop能力的其他子线程， 不管哪个线程使用的时候，比如get set，都只是针对自己线程里面的变量操作，不影响其他线程
+        // 调用Looper的私有构造， 创建一个Looper对象， 放到threadlocal中
+        // 这里之所以要做成ThreadLocal是因为，prepare方法可能在不同的线程中调用，比如main线程，比如需要loop能力的其他子线程， 不管哪个线程使用的时候，比如get set，都只是针对自己线程里面的变量操作，不影响其他线程
         sThreadLocal.set(new Looper());
     }
 ```
@@ -644,14 +645,14 @@ Looper中有个变量 sThreadLocal, 我们看看他是干嘛.
 
 
 ```java
-	// 私有的构造方法
-	// 因为Looper的创建时在prepare中， 所以这里private
-	// 在 Looper 内部持有对 MessageQueue 的引用
+    // 私有的构造方法
+    // 因为Looper的创建时在prepare中， 所以这里private
+    // 在 Looper 内部持有对 MessageQueue 的引用
     private Looper() {
-    		// 创建MessageQueue
+        // 创建MessageQueue
         mQueue = new MessageQueue();
         mRun = true;
-					// 赋值当前线程对象
+        // 赋值当前线程对象
         mThread = Thread.currentThread();
     }
 
@@ -662,7 +663,7 @@ Looper中有个变量 sThreadLocal, 我们看看他是干嘛.
 按照注释中给定的代码示例，prepare()之后， 创建一个 Handler 出来，我们回过头来看看前面 Handler 的构造。
 
 ```java
- 	/**
+    /**
      * Constructor associates this handler with the queue for the
      * current thread and takes a callback interface in which you can handle
      * messages.
@@ -711,7 +712,7 @@ Looper中有个变量 sThreadLocal, 我们看看他是干嘛.
      * {@link #quit()} to end the loop.
      */
     public static final void loop() {
-    		// 拿到当前线程关联的looper， 这个 looper 还是之前 set 的那个Looper对象
+        // 拿到当前线程关联的looper， 这个 looper 还是之前 set 的那个Looper对象
         Looper me = myLooper();
 				// 封装在looper中的MessageQueue, 因为looper和当前线程是关联的， 所以messagequeue也是和线程相关联的
         MessageQueue queue = me.mQueue;
@@ -723,7 +724,7 @@ Looper中有个变量 sThreadLocal, 我们看看他是干嘛.
         
         while (true) {
             Message msg = queue.next(); // might block 调用 queue的 next 方法，从MessageQueue中取出， 可能会阻塞
-          	// 如果当前的 MessageQueue 是空的， 或者 MessageQueue 中的第一个 Message 还没到执行时间，就阻塞了。
+            // 如果当前的 MessageQueue 是空的， 或者 MessageQueue 中的第一个 Message 还没到执行时间，就阻塞了。
             //if (!me.mRun) {
             //    break;
             //}
@@ -734,12 +735,12 @@ Looper中有个变量 sThreadLocal, 我们看看他是干嘛.
                     return;
                 }
 
-								// 打印日志
+                // 打印日志
                 if (me.mLogging!= null) me.mLogging.println(
                         ">>>>> Dispatching to " + msg.target + " "
                         + msg.callback + ": " + msg.what
                         );
-								// 将消息分发给target，target就是handler，  如果走到这里， target肯定不是null
+                // 将消息分发给target，target就是handler，  如果走到这里， target肯定不是null
                 msg.target.dispatchMessage(msg);
                 if (me.mLogging!= null) me.mLogging.println(
                         "<<<<< Finished to    " + msg.target + " "
@@ -783,20 +784,20 @@ Looper中有个变量 sThreadLocal, 我们看看他是干嘛.
      */
      // 处理消息，该方法由looper调用, 在looper的loop()方法中, msg.target.dispatchMessage(msg)
     public void dispatchMessage(Message msg) {
-    		// 先判断msg中的callback, 优先调用
-    		// 如果message设置了callback，即runnable消息，处理callback！
+        // 先判断msg中的callback, 优先调用
+        // 如果message设置了callback，即runnable消息，处理callback！
         if (msg.callback != null) {
             handleCallback(msg);
         } else {
-        		// 然后这里判断的是, handler的callback
-        		// 这种方法允许让activity等来实现Handler.Callback接口，避免了自己编写handler重写handleMessage方法。见http://alex-yang-xiansoftware-com.iteye.com/blog/850865
+            // 然后这里判断的是, handler的callback
+            // 这种方法允许让activity等来实现Handler.Callback接口，避免了自己编写handler重写handleMessage方法。见http://alex-yang-xiansoftware-com.iteye.com/blog/850865
             if (mCallback != null) {
                 if (mCallback.handleMessage(msg)) {
                     return;
                 }
             }
-						// 最后回调hanler的handleMessage方法
-						// 该方法必须由子类进行重写
+            // 最后回调hanler的handleMessage方法
+            // 该方法必须由子类进行重写
             handleMessage(msg);
         }
     }
@@ -805,10 +806,10 @@ Looper中有个变量 sThreadLocal, 我们看看他是干嘛.
 判断msg.callback 不为空的话， 就调用 `handleCallback(msg)`。 这个msg.callback 是啥？ 就是调用`handle.post(Runnable)`时候传入的那个runnable对象啊。还记得不， 他把传入的Runnable 对象包装了一下， 包装成Message对象之后， 调用了sendMessageAtTIme方法，  而这个Runnable对象是成为了Message对象的一个属性。 `handleCallback(msg)`就是直接run了一下， 没啥
 
 ```java
-		// 如果messge指定了callback属性, 就调用这个方法
+    // 如果messge指定了callback属性, 就调用这个方法
     private final void handleCallback(Message message) {
-    		// message.callback就是个runnable
-    		// 直接调用runnable的run方法
+        // message.callback就是个runnable
+        // 直接调用runnable的run方法
         message.callback.run();
     }
 ```
@@ -946,7 +947,7 @@ Q4：为什么在子线程调用`handler.sendEmptyMessage(2);` `handler.postDela
 Message有如下的成员变量
 
 ```java
-  	/**
+    /**
      * User-defined message code so that the recipient can identify 
      * what this message is about. Each {@link Handler} has its own name-space
      * for message codes, so you do not need to worry about yours conflicting
@@ -1009,7 +1010,7 @@ MAX_POOL_SIZE常量， 表示消息池最多能有几个对象。
 之后每次obtain都是从消息池中获取Message对象， 使用完之后， 回收到消息池中。具体如何实现， 我们来看obtain()方法。
 
 ```java
-/**
+    /**
      * Same as {@link #obtain()}, but sets the value for the <em>target</em> member on the Message returned.
      * @param h  Handler to assign to the returned Message object's <em>target</em> member.
      * @return A Message object from the global pool.
