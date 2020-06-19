@@ -4,9 +4,11 @@
 
 
 
+翻译一下：
+
 一个对象，维护了一系列的监听器。
 
-这些监听器通常用于去通知客户端 object被更新了。（哪个object呢？）
+这些监听器通常用于去通知客户端 object被更新了。
 
 
 
@@ -14,9 +16,7 @@
 
 
 
-
-
-```
+```dart
 /// An object that maintains a list of listeners.
 ///
 /// The listeners are typically used to notify clients that the object has been
@@ -69,7 +69,7 @@ abstract class Listenable {
 
 ValueListenable这个就是里面多维护了一个value
 
-```
+```dart
 /// An interface for subclasses of [Listenable] that expose a [value].
 ///
 /// This interface is implemented by [ValueNotifier<T>] and [Animation<T>], and
@@ -91,7 +91,7 @@ abstract class ValueListenable<T> extends Listenable {
 
 
 
-```
+```dart
 class ChangeNotifier implements Listenable {
   ObserverList<VoidCallback> _listeners = ObserverList<VoidCallback>();
  }
@@ -103,7 +103,7 @@ ChangeNotifier继承自Listenable， 里面维护了一些监听器
 
 ValueNotifier 相比较 ChangeNotifier 是里面多了一个value
 
-```
+```dart
 class ValueNotifier<T> extends ChangeNotifier implements ValueListenable<T> {
   /// Creates a [ChangeNotifier] that wraps this value.
   ValueNotifier(this._value);
@@ -134,14 +134,9 @@ class ValueNotifier<T> extends ChangeNotifier implements ValueListenable<T> {
 
 
 
-使用：先注册监听器， 再需要触发的时候调用notify就行了。
+ChangeNotifier 使用：先注册监听器， 再需要触发的时候调用notify就行了。
 
-```
-///
-/// 由于ChangeNotifier里面没有携带数据, 想要自己维护一个数据的话， 就继承自ChangeNotifier
-```
-
-```
+```dart
 ///
 /// 由于ChangeNotifier里面没有携带数据, 这里继承自ChangeNotifier,然后自己维护一个数据
 class MyChangeNotifier extends ChangeNotifier {
@@ -160,7 +155,7 @@ class MyChangeNotifier extends ChangeNotifier {
 }
 ```
 
-```
+```dart
 myChangeNotifier.addListener((){
   // 注册一个监听
   print('aaaaaa');
@@ -172,7 +167,7 @@ myChangeNotifier.addListener((){
 });
 ```
 
-```
+```dart
 RaisedButton(
   child: Text('触发'),
   onPressed: (){
@@ -185,17 +180,13 @@ RaisedButton(
 
 
 
-```
-ValueNotifier
-```
-
-使用
+ValueNotifier 使用:
 
 
 
 这个里面维护了一个value， 并且set的时候， 自动会notify， 因此不需要手动调用notify了。
 
-```
+```dart
  myValueNotifier.addListener((){
       // 注册一个监听
       print('myChangeNotifieraaaaaa');
@@ -207,7 +198,7 @@ ValueNotifier
     });
 ```
 
-```
+```dart
 RaisedButton(
   child: Text('触发2'),
   onPressed: (){

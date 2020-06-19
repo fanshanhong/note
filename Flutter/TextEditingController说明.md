@@ -2,15 +2,13 @@
 
 
 
-
-
 TextEditingController 其实 extends   ValueNotifier  extends ChangeNotifier
 
 
 
 TextEditingController 可以构造
 
-```
+```dart
 TextEditingController({ String text })
     : super(text == null ? TextEditingValue.empty : TextEditingValue(text: text));
 ```
@@ -21,13 +19,17 @@ TextEditingController({ String text })
 
 当给TextField 赋值的时候， 可以
 
-```
+```dart
 controller.value = new TextEditingValue(text: "给输入框填入参数");
 ```
 
 也可以
 
+```dart
 controller.text = ’123456‘;
+```
+
+
 
 
 
@@ -43,7 +45,7 @@ controller.value=xx 其实是调用 其set方法. Set 之后就会notify。
 
 
 
-```
+```dart
 
 /// A [ChangeNotifier] that holds a single value.
 ///
@@ -81,7 +83,7 @@ class ValueNotifier<T> extends ChangeNotifier implements ValueListenable<T> {
 
 其内部也是在给value 赋值
 
-```
+```dart
 set text(String newText) {
   value = value.copyWith(
     text: newText,
@@ -97,11 +99,15 @@ set text(String newText) {
 
 所以
 
+```dart
 controller.text = ’123456‘;
+```
 
 
 
+```dart
 controller.value=xx 
+```
 
 
 
