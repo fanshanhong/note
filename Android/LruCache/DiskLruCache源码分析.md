@@ -1057,4 +1057,5 @@ get()方法要求传入一个key来获取到相应的缓存数据，而这个key
 
 最后附上整个DiskLruCache 的流程图。
 
-![](./DiskLruCache流程图.png)
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/DiskLruCache_flow_chart.png)

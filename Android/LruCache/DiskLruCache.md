@@ -6,16 +6,26 @@ LruCache 是将数据缓存到内存中(LinkedHashMap)，具体实现请参考`L
 
 ### 初探
 相信所有人都知道，网易新闻中的数据都是从网络上获取的，包括了很多的新闻内容和新闻图片，如下图所示：
-![](./QQ截图20180917152502.png)
+
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/netease_new_pict.png)
+
+
 
 但是不知道大家有没有发现，这些内容和图片在从网络上获取到之后都会存入到本地缓存中，因此即使手机在没有网络的情况下依然能够加载出以前浏览过的新闻。而使用的缓存技术不用多说，自然是DiskLruCache了，那么首先第一个问题，这些数据都被缓存在了手机的什么位置呢？
 
 那么这里以网易新闻为例，它的客户端的包名是com.netease.newsreader.activity，它的数据缓存放在了/data/data/com.netease.newsreader.activity/cache下面，我们进入到这个目录中看一下，结果如下图所示：
-![](./QQ截图20180917152611.png)
+
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/netease_new_cache_dir.png)
+
 
 其中bitmap_glide就是缓存图片的地方， 他是使用了Glide，  Glide里面用了DiskLruCache
 我们进入bitmap_glide目录看看
-![](./QQ截图20180917152714.png)
+
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/netease_new_bitmap_glide_dir.png)
+
 
 上面那些文件名很长的文件就是一张张缓存的图片，每个文件都对应着一张图片，而journal文件是DiskLruCache的一个日志文件，程序对每张图片的操作记录都存放在这个文件中，基本上看到journal这个文件就标志着该程序使用DiskLruCache技术了。
 
@@ -185,7 +195,9 @@ Android中对字符串MD5加密方式如下：
 
 现在的话缓存应该是已经成功写入了，我们进入到SD卡上的缓存目录里看一下
 
-![](./QQ截图20180917150614.png)
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/my_disklrucache_cache_dir.png)
+
 
 可以看到，这里有一个文件名很长的文件，和一个journal文件，那个文件名很长的文件自然就是缓存的图片了，因为是使用了MD5编码来进行命名的。journal文件是DiskLruCache的一个日志文件，程序对每张图片的操作记录都存放在这个文件中。Glide也是用了DiskLruCache的， 所以目前使用了Glide的项目， 基本都能看到这个journal文件。
 
@@ -235,7 +247,9 @@ try {
 
 这个方法会返回当前缓存路径下所有缓存数据的总字节数，以byte为单位，如果应用程序中需要在界面上显示当前缓存数据的总大小，就可以通过调用这个方法计算出来。比如网易新闻中就有这样一个功能，如下图所示：
 
-![](./QQ截图20180917152025.png)
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/netease_new_size_pict.png)
+
 
 2. flush()
 
@@ -254,7 +268,10 @@ try {
 
 #### 解读journal
 前面已经提到过，DiskLruCache能够正常工作的前提就是要依赖于journal文件中的内容。DiskLruCache通过日志来辅助保证磁盘缓存的有效性。在应用程序运行阶段，可以通过内存数据来保证缓存的有效性，但是一旦应用程序退出或者被意外杀死，下次再启动的时候就需要通过journal日志来重新构建磁盘缓存数据记录，保证上次的磁盘缓存是有效和可用的。因此，能够读懂journal文件对于我们理解DiskLruCache的工作原理有着非常重要的作用。那么journal文件中的内容到底是什么样的呢？我们来打开瞧一瞧吧，如下图所示：
-![](./Q20140804233158296.png)
+
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/journal.png)
+
 
 * 其中第一行固定为libcore.io.DiskLruCache；
 * 第二行是DiskLruCache的版本，目前固定为1；
@@ -279,7 +296,7 @@ try {
 
 
 
-![](./Q20140805223723516.png)
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/journal_pict_size.png)
 
 
 
