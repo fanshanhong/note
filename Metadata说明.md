@@ -20,7 +20,7 @@ Those are some typical metadata elements:
 
 ## A photo
 
-![img](https://dataedo.com/asset/img/kb/glossary/metadata_photo.png)
+![img](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/metadata_photo.png)
 
 Every time you take a photo with today's cameras a bunch of metadata is gathered and saved with it:
 
@@ -31,7 +31,7 @@ Every time you take a photo with today's cameras a bunch of metadata is gathered
 
 ## A book
 
-![img](https://dataedo.com/asset/img/kb/glossary/metadata_book.png)
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/metadata_book.png)
 
 Each book has a number of standard metadata on the covers and inside. This includes:
 
@@ -45,7 +45,7 @@ Each book has a number of standard metadata on the covers and inside. This inclu
 
 ## A blog post
 
-![img](https://dataedo.com/asset/img/kb/glossary/metadata_blog_post.png)
+![img](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/metadata_blog_post.png)
 
 Every blog post has standard metadata fields that are usually at before first paragraph. This includes:
 
@@ -57,7 +57,7 @@ Every blog post has standard metadata fields that are usually at before first pa
 
 ## Email
 
-![img](https://dataedo.com/asset/img/kb/glossary/metadata_email.png)
+![img](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/metadata_email.png)
 
 Every email you send or receive has a number of metadata fields, many of which are hidden in the message header and not visible to you in your mail client. This metadata includes:
 
@@ -71,7 +71,7 @@ Every email you send or receive has a number of metadata fields, many of which a
 
 ## Word document
 
-![img](https://dataedo.com/asset/img/kb/glossary/metadata_word_document.png)
+![img](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/metadata_word_document.png)
 
 Every word processing software collects some standard metadata and enables you to add your own fields for each document. Typical fields are:
 
@@ -86,7 +86,7 @@ Every word processing software collects some standard metadata and enables you t
 
 ## A spreadsheet
 
-![img](https://dataedo.com/asset/img/kb/glossary/metadata_spreadsheet.png)
+![img](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/metadata_spreadsheet.png)
 
 Spreadsheets contain a few metadata fields:
 
@@ -97,7 +97,7 @@ Spreadsheets contain a few metadata fields:
 
 ## Relational database
 
-![img](https://dataedo.com/asset/img/kb/glossary/metadata_database.png)
+![img](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/metadata_database.png)
 
 Relational databases (most common type of database) store and provide access not only data but also metadata in a structure called [data dictionary or system catalog](https://dataedo.com/kb/databases/all/data-dictionary). It holds information about:
 
@@ -120,7 +120,7 @@ Extract metadata from databases, document schema and share in convenient HTML.
 
 ## Computer files
 
-![img](https://dataedo.com/asset/img/kb/glossary/metadata_files.png)
+![img](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/metadata_files.png)
 
 All the fields you see by each file in file explorer is actually metadata. The actual data is inside those files. Metadata includes:
 
@@ -132,7 +132,7 @@ All the fields you see by each file in file explorer is actually metadata. The a
 
 ## Web page
 
-![img](https://dataedo.com/asset/img/kb/glossary/metadata_webpage.png)
+![img](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/metadata_webpage.png)
 
 Every web page has a number of metadata fields:
 
@@ -142,7 +142,7 @@ Every web page has a number of metadata fields:
 
 ## Paper files
 
-![img](https://dataedo.com/asset/img/kb/glossary/metadata_secret_files.png)
+![img](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/metadata_secret_files.png)
 
 Paper document files have often administrative metadata that help manage documents. This might include:
 

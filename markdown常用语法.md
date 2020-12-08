@@ -446,12 +446,12 @@ Markdown 标记区块引用的方法是在行的最前面加 > ，也可以只�
 示例:
 
 ```markdown
-![LOGO](https://www.zybuluo.com/static/img/logo.png '描述')
+![LOGO](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/logo.png '描述')
 ```
 
 效果:
 
-![LOGO](https://www.zybuluo.com/static/img/logo.png '描述')
+![LOGO](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/logo.png '描述')
 
 <br />
 <br />
@@ -461,14 +461,14 @@ Markdown 标记区块引用的方法是在行的最前面加 > ，也可以只�
 示例:
 
 ```markdown
-[LOGO]: https://www.zybuluo.com/static/img/logo.png
+[LOGO]: https://cdn.jsdelivr.net/gh/fanshanhong/note-image/logo.png
 
 这里引用一下图片![LOGO]
 ```
 
 效果如下:
 
-[LOGO]: https://www.zybuluo.com/static/img/logo.png
+[LOGO]: https://cdn.jsdelivr.net/gh/fanshanhong/note-image/logo.png
 
 这里引用一下图片![LOGO]
 
@@ -478,12 +478,12 @@ Markdown 标记区块引用的方法是在行的最前面加 > ，也可以只�
 
 示例:
 ```markdown
-[![](https://www.zybuluo.com/static/img/logo.png '百度')](http://www.baidu.com)
+[![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/logo.png '百度')](http://www.baidu.com)
 ```
 
 效果:
 
-[![](https://www.zybuluo.com/static/img/logo.png '百度')](http://www.baidu.com)
+[![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/logo.png '百度')](http://www.baidu.com)
 
 # 八.代码框
 
