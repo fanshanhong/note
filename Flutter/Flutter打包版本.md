@@ -3,8 +3,7 @@ Flutter打包版本
 
 
 
-
-![image-20200514104816436](/Users/shanhongfan/Library/Application Support/typora-user-images/image-20200514104816436.png)
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/flutter_version_code.png)
 
 
 
@@ -34,8 +33,8 @@ if (localPropertiesFile.exists()) {
 
 local.properties
 
-![image-20200514105031205](/Users/shanhongfan/Library/Application Support/typora-user-images/image-20200514105031205.png)
 
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/flutter_local_properties.png)
 
 
 里面有 flutter.versionName 和 flutterVersionCode
@@ -46,10 +45,7 @@ local.properties
 
 也就是从这里来的。那这里这两个字段的值， 是在打包的时候生成的。  打包的时候， 会将pubspec.yaml中的version内容生成到local.properties里
 
-![image-20200514105155307](/Users/shanhongfan/Library/Application Support/typora-user-images/image-20200514105155307.png)
-
-
-
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/flutter_yaml_version_code.png)
 
 
 明确一点：Android打包，版本号还是由build.gradle中指定的。
