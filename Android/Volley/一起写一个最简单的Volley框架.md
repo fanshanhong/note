@@ -246,7 +246,9 @@ public abstract class Request<T> implements Comparable<Request<T>> {
 
 根据 HTTP 协议，HTTP 响应报文结构如下：
 
-![HTTP 响应报文](http://www.2cto.com/uploadfile/Collfiles/20160921/20160921092902557.jpg)
+
+![HTTP 响应报文](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/http_header_message.jpg)
+
 
 在 `org.apache.http` 包下有个 `BasicHttpResponse` 类。这个类中帮我们维护了 HTTP 响应报文中的  `①报文协议及版本`  `②状态码及状态描述` 的相关内容。因此我们直接继承自它，再将 HTTP 响应报文中的`③响应头`和 `④响应实体`维护进去就可以了。因此我们的 `Response` 类这样声明  `public class Response<T> extends BasicHttpResponse {}`, 并在里面添加了如下两个变量：
     
