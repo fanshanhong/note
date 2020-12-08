@@ -8,8 +8,10 @@ grammar_cjkRuby: true
 ---
 
 * Android系统每隔16ms发出VSYNC信号，触发对UI进行渲染， 如果每次渲染都成功，这样就能够达到流畅的画面所需要的60fps，为了能够实现60fps，这意味着程序的大多数操作都必须在16ms内完成。因此不能阻塞主线程, 主线程中的操作要在16ms内完成。
-* 
-![名称](http://static.codeceo.com/images/2015/03/b88b48591a260c42ad03fbbe419a0581.png)
+
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/draw_per_16ms.png)
+
 
 如果你的某个操作(主线程中的操作)花费时间是24ms，系统在得到VSYNC信号的时候主线程就无法进行正常渲染，这样就发生了丢帧现象。只能在下一次VSYNC信号到来的时候再进行渲染，那么用户在32ms内看到的会是同一帧画面。
 
@@ -22,9 +24,12 @@ grammar_cjkRuby: true
 # Understanding Overdraw (过度绘制)
 ---
 
+
 * Overdraw(过度绘制)描述的是屏幕上的某个像素在同一帧的时间内被绘制了多次。在多层次的UI结构里面，如果不可见的UI也在做绘制的操作，这就会导致某些像素区域被绘制了多次。这就浪费大量的CPU以及GPU资源。可以通过手机设置里面的开发者选项，打开Show GPU Overdraw的选项，可以观察UI上的Overdraw情况~在小米上叫 （调试GPU过度绘制）
-* 
-![名称](http://static.codeceo.com/images/2015/03/58ceca0ea65e679f1dfa0c303081f7d3.png)
+
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/overdraw_options_view.png)
+
 
 *  蓝色，淡绿，淡红，深红代表了4种不同程度的Overdraw情况，我们的目标就是尽量减少红色Overdraw，看到更多的蓝色区域。
 *  Overdraw有时候是因为你的UI布局存在大量重叠的部分，还有的时候是因为非必须的重叠背景。例如某个Activity有一个背景，然后里面 的Layout又有自己的背景，同时子View又分别有自己的背景。仅仅是通过移除非必须的背景图片，这就能够减少大量的红色Overdraw区域，增加 蓝色区域的占比。这一措施能够显著提升程序性能。
@@ -39,13 +44,24 @@ grammar_cjkRuby: true
 
 CPU将界面上的UI单元（按钮、图片等）经过计算， 转换成polygons 和 texture ， 然后传递给GPU， GPU获取到图形数据后进行渲染（栅格化），然后硬件负责把渲染后的内容呈现到屏幕上，他们两者不停的进行协作。
 
-![](http://static.codeceo.com/images/2015/03/2ae60846e9527e6fbe0a1a83e9231a37.png)
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/vsync_gpu_hardware.png)
+
+
 
 不幸的是，刷新频率和帧率并不是总能够保持相同的节奏。如果发生帧率与刷新频率不一致的情况，就会容易出现Tearing的现象(画面上下两部分显示内容发生断裂，来自不同的两帧数据发生重叠)。
 
-![](http://static.codeceo.com/images/2015/03/7b202f9840bf078e2a9c442ece7fe714.png)
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/vsync_gpu_hardware_not_sync.png)
+
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/vsync_buffer.png)
+
 
 通常来说，帧率超过刷新频率只是一种理想的状况，在超过60fps的情况下，GPU所产生的帧数据会因为等待VSYNC的刷新信息而被Hold住，这样能够保持每次刷新都有实际的新的数据可以显示。但是我们遇到更多的情况是帧率小于刷新频率。
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/vsync_gpu_hardware_not_sync2.png)
+
 刷新频率是硬件参数决定的60Hz， 这个一般不会变化。帧率是受到GPU计算及绘制影响的。
 当帧率超过刷新频率， 意味着， GPU已经将图形数据渲染好了， 等待着硬件去显示（也就是等待VSYNC信号）， 这种情况用户看到的界面是流畅的额。
 反之， 意味着， 硬件已经发送出VSYNC准备刷新屏幕了， 但是GPU还没渲染好图形数据， 因此硬件就只能刷新了GPU之前的那一帧数据， 这样用户看起来就感觉丢帧了。 
@@ -55,13 +71,23 @@ CPU将界面上的UI单元（按钮、图片等）经过计算， 转换成polyg
 
 打开手机里面的开发者选项，选择Profile GPU Rendering，选中On screen as bars的选项。在小米上叫 （GPU呈现模式分析）
 
-![](http://static.codeceo.com/images/2015/03/3d045b01969fa37814a1c563e9ba5c0e.png)
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/tools_gpu_profile_rendering.png)
 
-![](http://static.codeceo.com/images/2015/03/5b775929bcb5a0a0e3d0d5fb9d4aa2d0.png)
+
+选择了这样以后，我们可以在手机画面上看到丰富的GPU绘制图形信息，分别关于StatusBar，NavBar，激活的程序Activity区域的GPU Rending信息。
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/tools_gpu_profile_rendering_graphic_activity.png)
+
+
 
 随着界面的刷新，界面上会滚动显示垂直的柱状图来表示每帧画面所需要渲染的时间，柱状图越高表示花费的渲染时间越长。
 
-![](http://static.codeceo.com/images/2015/03/7e55b231b12acde3d02e1faf5a2a1279.png)
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/tools_gpu_rendering_bar.png)
+
+
+中间有一根绿色的横线，代表16ms，我们需要确保每一帧花费的总时间都低于这条横线，这样才能够避免出现卡顿的问题。
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/tools_gpu_profile_three_color.png)
 
 每一条柱状线都包含三部分，蓝色代表测量绘制Display List的时间，红色代表OpenGL渲染Display List所需要的时间，黄色代表CPU等待GPU处理的时间。
 
@@ -79,13 +105,17 @@ CPU将界面上的UI单元（按钮、图片等）经过计算， 转换成polyg
 
 了解Android是如何利用GPU进行画面渲染有助于我们更好的理解性能问题。那么一个最实际的问题是：activity的画面是如何绘制到屏幕上的？那些复杂的XML布局文件又是如何能够被识别并绘制出来的？
 
-![](http://static.codeceo.com/images/2015/03/2cdd6922a4cdd12045e2838f25431c92.png)
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/tools_gpu_profile_three_color.png)
+
 
 Resterization栅格化是绘制那些Button，Shape，Path，String，Bitmap等组件最基础的操作。它把那些组件拆分到不同的像素上进行显示。这是一个很费时的操作，GPU的引入就是为了加快栅格化的操作。
 
 CPU负责把UI组件计算成Polygons，Texture纹理，然后交给GPU进行栅格化渲染。我们常常说GPU用于渲染， 其实渲染所做的工作就是栅格化。
 
-![](http://static.codeceo.com/images/2015/03/34dcd118dba4857577ab334a4d886f56.png)
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/gpu_rasterization.png)
+
 
 然而每次从CPU转移到GPU是一件很麻烦的事情，所幸的是OpenGL ES可以把那些需要渲染的纹理Hold在GPU Memory里面，在下次需要渲染的时候直接进行操作。所以如果你更新了GPU所hold住的纹理内容，那么之前保存的状态就丢失了。
 
@@ -114,11 +144,15 @@ CPU负责把UI组件计算成Polygons，Texture纹理，然后交给GPU进行栅
 
 有一个窍门是我们可以通过执行几个APIs方法来显著提升绘制操作的性能。前面有提到过，非可见的UI组件进行绘制更新会导致Overdraw。例 如Nav Drawer从前置可见的Activity滑出之后，如果还继续绘制那些在Nav Drawer里面不可见的UI组件，这就导致了Overdraw。为了解决这个问题，Android系统会通过避免绘制那些完全不可见的组件来尽量减少 Overdraw。那些Nav Drawer里面不可见的View就不会被执行浪费资源。
 
-![](http://static.codeceo.com/images/2015/03/9090830fbbb8b347a69e7dc1a87b7244.png)
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/overdraw_invisible.png)
+
 
 但是不幸的是，对于那些过于复杂的自定义的View(重写了onDraw方法)，Android系统无法检测具体在onDraw里面会执行什么操作，系统无法监控并自动优化，也就无法避免Overdraw了。但是我们可以通过canvas.clipRect()来帮助系统识别那些可见的区域。这个方法可以指定一块矩形区域，只有在这个区域内才会被绘制，其他的区域会被忽视。这个API可以很好的帮助那些有多组重叠 组件的自定义View来控制显示的区域。同时clipRect方法还可以帮助节约CPU与GPU资源，在clipRect区域之外的绘制指令都不会被 行，那些部分内容在矩形区域内的组件，仍然会得到绘制。
 
-![](http://static.codeceo.com/images/2015/03/28c5fd4c18b9e2eaea32d2b857e95993.png)
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/overdraw_invisible.png)
+
 
 除了clipRect方法之外，我们还可以使用canvas.quickreject()来判断是否没和某个矩形相交，从而跳过那些非矩形区域内的绘制操作。做了那些优化之后，我们可以通过上面介绍的Show GPU Overdraw来查看效果。
 
@@ -127,7 +161,9 @@ CPU负责把UI组件计算成Polygons，Texture纹理，然后交给GPU进行栅
 
 Android系统里面有一个Generational Heap Memory的模型，系统会根据内存中不同 的内存数据类型分别执行不同的GC操作。例如，最近刚分配的对象会放在Young Generation区域，这个区域的对象通常都是会快速被创建并且很快被销毁回收的，同时这个区域的GC操作速度也是比Old Generation区域的GC操作速度更快的。
 
-![](http://static.codeceo.com/images/2015/03/1580e68dd68ab3f0c011c568ff25f054.png)
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/memory_mode_generation.png)
+
 
 可以看到， Generational Heap Memory 模型， 分三级内存区域， 分别是Yong Generation， Old Generation，   Permanent（持久的）。  最近分配的对象 会存放在Young Generation区域，当这个对象在这个区域停留的时间达到一定程度，它会被移动到Old Generation，最后到Permanent Generation区域。
 
@@ -135,13 +171,25 @@ Android系统里面有一个Generational Heap Memory的模型，系统会根据�
 
 除了速度差异之外，执行GC操作的时候，任何线程（包括主线程UI线程）的任何操作都会需要暂停，等待GC操作完成之后，其他操作才能够继续运行。
 
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/gc_event_thread_stop.png)
+
+
 通常来说，单个的GC并不会占用太多时间，但是大量不停的GC操作则会显著占用帧间隔时间(16ms)。如果在帧间隔时间里面做了过多的GC操作，那么自然其他类似计算，渲染等操作的可用时间就变得少了， 会造成主线程阻塞。
 
 导致GC频繁执行有两个原因：
 * Memory Churn内存抖动，内存抖动是因为大量的对象被创建又在短时间内马上被释放。（比如在for循环里面大量的创建对象）
 * 瞬间产生大量的对象会严重占用Young Generation的内存区域，当达到阀值，剩余空间不够的时候，也会触发GC。即使每次分配的对象占用了很少的内存，但是他们叠加在一起会增加 Heap的压力，从而触发更多其他类型的GC。这个操作有可能会影响到帧率，并使得用户感知到性能问题。
 
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/gc_overtime.png)
+
+
 解决上面的问题有简洁直观方法，如果你在Memory Monitor （Android Studio 下面的Monitors）里面查看到短时间发生了多次内存的涨跌，这意味着很有可能发生了内存抖动。
+
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/memory_monitor_gc.png)
+
 
 同时我们还可以通过Allocation Tracker来查看在短时间内，同一个栈中不断进出的相同对象。这是内存抖动的典型信号之一。
 
@@ -155,9 +203,15 @@ Android系统里面有一个Generational Heap Memory的模型，系统会根据�
 
 原始JVM中的GC机制在Android中得到了很大程度上的优化。Android里面是一个三级Generation的内存模型，最近分配的对象 会存放在Young Generation区域，当这个对象在这个区域停留的时间达到一定程度，它会被移动到Old Generation，最后到Permanent Generation区域。
 
-![](http://static.codeceo.com/images/2015/03/23a3b109dd3d3cbd0d7d21a5a9363a63.png)
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/android_memory_gc_mode.png)
+
 
 每一个级别的内存区域都有固定的大小，此后不断有新的对象被分配到此区域，当这些对象总的大小快达到这一级别内存区域的阀值时，会触发GC的操作，以便腾出空间来存放其他新的对象。
+
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/gc_threshold.png)
+
 
 前面提到过每次GC发生的时候，所有的线程都是暂停状态的。GC所占用的时间和它是哪一个Generation也有关系，Young Generation的每次GC操作时间是最短的，Old Generation其次，Permanent Generation最长。执行时间的长短也和当前Generation中的对象数量有关，遍历查找20000个对象比起遍历50个对象自然是要慢很多 的。
 
@@ -192,11 +246,13 @@ Android系统里面有一个Generational Heap Memory的模型，系统会根据�
 # Tool – Memory Monitor （Memory Monitor 工具使用）
 ---
 
-![](http://static.codeceo.com/images/2015/03/6d16168c4a9f76fbbea75d58c7893639.png)
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/memory_monitor_overview.png)
 
-![](http://static.codeceo.com/images/2015/03/11a91d3d849e4b0258474ddcd75ab276.png)
 
-![](http://static.codeceo.com/images/2015/03/194624856ba08346f84bdba0c51d42df.png)
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/memory_monitor_free_allocation.png)
+
+
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/memory_monitor_gc_event.png)
 
 
 # Battery Performance （电池性能）
