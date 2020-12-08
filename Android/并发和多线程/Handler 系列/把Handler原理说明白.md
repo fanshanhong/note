@@ -115,7 +115,7 @@ why？？
 
 Handler主要完成Message的入队（MessageQueue）和处理，下面将通过Handler的源码分析其消息分发、处理流程。来看下Handler类的方法列表：
 
-![](./images/Handler方法说明.png)
+![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/Handler_method_list.png)
 
 首先来看Handler的几个构造方法：
 

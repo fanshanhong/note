@@ -8,9 +8,9 @@
 
 
 
-对 Handler 及 ThreadLocal 不熟悉的小伙伴请先阅读 [把Handler原理说明白.md](./把Handler原理说明白.md) 和  [把ThreadLocal原理说明白.md](./把ThreadLocal原理说明白.md)
+对 Handler 及 ThreadLocal 不熟悉的小伙伴请先阅读 [把Handler原理说明白.md](https://github.com/fanshanhong/note/blob/master/Android/%E5%B9%B6%E5%8F%91%E5%92%8C%E5%A4%9A%E7%BA%BF%E7%A8%8B/Handler%20%E7%B3%BB%E5%88%97/%E6%8A%8AHandler%E5%8E%9F%E7%90%86%E8%AF%B4%E6%98%8E%E7%99%BD.md) 和  [把ThreadLocal原理说明白.md](https://github.com/fanshanhong/note/blob/master/Android/%E5%B9%B6%E5%8F%91%E5%92%8C%E5%A4%9A%E7%BA%BF%E7%A8%8B/Handler%20%E7%B3%BB%E5%88%97/%E6%8A%8AThreadLocal%E5%8E%9F%E7%90%86%E8%AF%B4%E6%98%8E%E7%99%BD.md)
 
-对线程同步不清楚的小伙伴，请先阅读[线程同步](../线程系列/线程同步.md)
+对线程同步不清楚的小伙伴，请先阅读[线程同步](https://github.com/fanshanhong/note/blob/master/Android/%E5%B9%B6%E5%8F%91%E5%92%8C%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E7%B3%BB%E5%88%97/%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5.md)
 
 
 
@@ -158,13 +158,13 @@ HandlerThread 为我们提供了两个构造。
 
 首先获取到当前所在线程的 tid。
 
-然后调用 Looper的 prepare()。在 [把Handler原理说明白](./把Handler原理说明白.md) 中我们知道，这个 prepare() 内部就是创建了一个 Looper 对象并存入 ThreadLocal 中  `sThreadLocal.set(new Looper());` 。说的更深入一些，就是将<ThreadLocal, Looper> 作为键值对， 放入当前线程的 ThreadLocalMap 中。即：将 Looper 对象与当前线程进行关联。
+然后调用 Looper的 prepare()。在 [把Handler原理说明白](https://github.com/fanshanhong/note/blob/master/Android/%E5%B9%B6%E5%8F%91%E5%92%8C%E5%A4%9A%E7%BA%BF%E7%A8%8B/Handler%20%E7%B3%BB%E5%88%97/%E6%8A%8AHandler%E5%8E%9F%E7%90%86%E8%AF%B4%E6%98%8E%E7%99%BD.md) 中我们知道，这个 prepare() 内部就是创建了一个 Looper 对象并存入 ThreadLocal 中  `sThreadLocal.set(new Looper());` 。说的更深入一些，就是将<ThreadLocal, Looper> 作为键值对， 放入当前线程的 ThreadLocalMap 中。即：将 Looper 对象与当前线程进行关联。
 
 之后，上锁，再从 sThreadLocal 中将 Looper 对象取出，此时，我们的 Looper 已经准备好了，可以通知其他线程。(关于线程同步，请参考[线程同步](../线程系列/线程同步.md))
 
 之后设置了线程的优先级。
 
-然后开始 Looper.loop() 进行循环，不断从 MessageQueue 中取出 Message。刚开始肯定是阻塞的，因为我们还没给 MessageQueue 中丢入 Message， MessageQueue 其实是空的。我们在 [把Handler原理说明白](./把Handler原理说明白.md) 中说过，Handler 处理消息是在哪个线程执行的， 就看 Handler 中的 Looper 是在哪里执行 loop()方法。显然，如果我们用这个 Looper 对象来创建 Handler，那么 Handler 处理消息，肯定就是在当前这个 HandlerThread 线程中执行了。
+然后开始 Looper.loop() 进行循环，不断从 MessageQueue 中取出 Message。刚开始肯定是阻塞的，因为我们还没给 MessageQueue 中丢入 Message， MessageQueue 其实是空的。我们在 [把Handler原理说明白](https://github.com/fanshanhong/note/blob/master/Android/%E5%B9%B6%E5%8F%91%E5%92%8C%E5%A4%9A%E7%BA%BF%E7%A8%8B/Handler%20%E7%B3%BB%E5%88%97/%E6%8A%8AHandler%E5%8E%9F%E7%90%86%E8%AF%B4%E6%98%8E%E7%99%BD.md) 中说过，Handler 处理消息是在哪个线程执行的， 就看 Handler 中的 Looper 是在哪里执行 loop()方法。显然，如果我们用这个 Looper 对象来创建 Handler，那么 Handler 处理消息，肯定就是在当前这个 HandlerThread 线程中执行了。
 
 
 
@@ -323,4 +323,4 @@ Q2：这里为啥要加synchronized
 
 
 
-更通俗的讲解线程同步的问题，请参考：[线程同步](../线程系列/线程同步.md)
+更通俗的讲解线程同步的问题，请参考：[线程同步](https://github.com/fanshanhong/note/blob/master/Android/%E5%B9%B6%E5%8F%91%E5%92%8C%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E7%B3%BB%E5%88%97/%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5.md)

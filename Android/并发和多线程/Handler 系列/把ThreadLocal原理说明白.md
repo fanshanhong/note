@@ -78,7 +78,7 @@ fun2(){
 
 ## ThreadLocal 源码分析
 
-![ThreadLocal 方法列表](./images/ThreadLocal方法列表.png)
+![ThreadLocal 方法列表](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/ThreadLocal_method_list.png)
 
 
 
