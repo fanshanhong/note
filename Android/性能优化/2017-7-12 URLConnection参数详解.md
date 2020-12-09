@@ -1,8 +1,29 @@
 ---
-title: 2017-7-12 URLConnection参数详解
-tags: HttpUrlConnection
-grammar_cjkRuby: true
+title: URLConnection参数详解
+
+date: 2017-7-12
+
+categories: 
+   - Android
+   - 性能优化
+
+tags: 
+   - Android 
+   - UrlConnection 
+
+description: ​
 ---
+
+<!-- TOC -->
+
+- [1.URLConnection的对象问题](#1urlconnection的对象问题)
+- [2. HttpURLConnection对象参数问题](#2-httpurlconnection对象参数问题)
+- [3.HttpUrlConnection 连接问题](#3httpurlconnection-连接问题)
+- [4.HttpURLConnection写数据与发送数据问题](#4httpurlconnection写数据与发送数据问题)
+- [5.超时设置](#5超时设置)
+- [6.总结](#6总结)
+
+<!-- /TOC -->
 
 
 # 1.URLConnection的对象问题

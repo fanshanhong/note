@@ -1,8 +1,43 @@
 ---
-title: Google官方Android性能优化典范第2季
-tags: Android， 性能优化
-grammar_cjkRuby: true
+title: Android性能优化第2季
+
+date: 2017-7-26
+
+categories: 
+   - Android
+   - 性能优化
+
+tags: 
+   - Android 
+   - U性能优化 
+
+description: ​
 ---
+
+
+<!-- TOC -->
+
+- [1.Battery Drain and Networking（电量消耗和网络）](#1battery-drain-and-networking电量消耗和网络)
+    - [1.1何时发起网络请求](#11何时发起网络请求)
+- [2.Wear & Sensors（穿戴设备及传感器）](#2wear--sensors穿戴设备及传感器)
+- [3.Smooth Android Wear Animation](#3smooth-android-wear-animation)
+- [4.Android Wear Data Batching](#4android-wear-data-batching)
+- [5.Object Pools（对象池）](#5object-pools对象池)
+- [6.To Index or Iterate?](#6to-index-or-iterate)
+- [7.The Magic of LRU Cache](#7the-magic-of-lru-cache)
+- [8.Using LINT for Performance Tips](#8using-lint-for-performance-tips)
+- [9.Hidden Cost of Transparency](#9hidden-cost-of-transparency)
+- [10.Avoiding Allocations in onDraw()](#10avoiding-allocations-in-ondraw)
+- [11.Tool: Strict Mode](#11tool-strict-mode)
+- [12.Custom Views and Performance](#12custom-views-and-performance)
+- [13.](#13)
+- [14.Smaller Pixel Formats](#14smaller-pixel-formats)
+- [15.Smaller PNG Files](#15smaller-png-files)
+- [16.Bitmap 优化](#16bitmap-优化)
+- [17.Re-using Bitmaps](#17re-using-bitmaps)
+
+<!-- /TOC -->
+
 
 # 1.Battery Drain and Networking（电量消耗和网络）
 ---

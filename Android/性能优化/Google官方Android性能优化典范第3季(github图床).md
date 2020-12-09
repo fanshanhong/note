@@ -1,8 +1,40 @@
 ---
-title: Google官方Android性能优化典范第3季
-tags: Android， 性能优化
-grammar_cjkRuby: true
+title: Android性能优化第3季
+
+date: 2017-8-16
+
+categories: 
+   - Android
+   - 性能优化
+
+tags: 
+   - Android 
+   - U性能优化 
+
+description: ​
 ---
+
+<!-- TOC -->
+
+- [1.Fun with ArrayMaps](#1fun-with-arraymaps)
+- [2.Beware Autoboxing](#2beware-autoboxing)
+- [3.SparseArray Family Ties](#3sparsearray-family-ties)
+- [4.The price of ENUMs](#4the-price-of-enums)
+- [5.](#5)
+- [6.DO NOT LEAK VIEWS](#6do-not-leak-views)
+    - [6.1避免使用异步回调](#61避免使用异步回调)
+    - [6.2 避免使用Static对象](#62-避免使用static对象)
+    - [6.4 避免把View添加到没有清除机制的容器里面](#64-避免把view添加到没有清除机制的容器里面)
+- [7.Location & Battery Drain](#7location--battery-drain)
+- [8.Double Layout Taxation](#8double-layout-taxation)
+- [9.Network Performance 101](#9network-performance-101)
+    - [9.1减少移动网络被激活的时间与次数](#91减少移动网络被激活的时间与次数)
+    - [9.2 压缩传输数据](#92-压缩传输数据)
+- [10.](#10)
+- [11.Optimizing Network Request Frequencies](#11optimizing-network-request-frequencies)
+- [12.Effective Prefetching](#12effective-prefetching)
+
+<!-- /TOC -->
 
 
 # 1.Fun with ArrayMaps

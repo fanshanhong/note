@@ -1,8 +1,41 @@
 ---
-title: 2017-7-11 Android性能优化第一季
-tags:Android，性能优化
-grammar_cjkRuby: true
+title: Android性能优化第一季
+
+date: 2017-7-20
+
+categories: 
+   - Android
+   - 性能优化
+
+tags: 
+   - Android 
+   - U性能优化 
+
+description: ​
 ---
+
+
+<!-- TOC -->
+
+- [Render Performance (渲染性能)](#render-performance-渲染性能)
+- [Understanding Overdraw (过度绘制)](#understanding-overdraw-过度绘制)
+- [Understanding VSYNC](#understanding-vsync)
+- [Tool:Profile GPU Rendering （查看GPU渲染情况的工具）](#toolprofile-gpu-rendering-查看gpu渲染情况的工具)
+- [Why 60fps?](#why-60fps)
+- [Android, UI and the GPU](#android-ui-and-the-gpu)
+- [Invalidations, Layouts, and Performance （无效的布局和性能）](#invalidations-layouts-and-performance-无效的布局和性能)
+- [Overdraw, Cliprect, QuickReject](#overdraw-cliprect-quickreject)
+- [Memory Churn and performance（内存抖动和性能）](#memory-churn-and-performance内存抖动和性能)
+- [Garbage Collection in Android（Android 中的GC）](#garbage-collection-in-androidandroid-中的gc)
+- [Performance Cost of Memory Leaks （内存泄漏导致的性能问题）](#performance-cost-of-memory-leaks-内存泄漏导致的性能问题)
+- [Memory Performance](#memory-performance)
+- [Tool – Memory Monitor （Memory Monitor 工具使用）](#tool--memory-monitor-memory-monitor-工具使用)
+- [Battery Performance （电池性能）](#battery-performance-电池性能)
+- [Understanding Battery Drain on Android（Android 中的电池消耗）](#understanding-battery-drain-on-androidandroid-中的电池消耗)
+- [Battery Drain and WakeLocks（电池消耗和WakeLock）](#battery-drain-and-wakelocks电池消耗和wakelock)
+
+<!-- /TOC -->
+
 
 # Render Performance (渲染性能)
 ---

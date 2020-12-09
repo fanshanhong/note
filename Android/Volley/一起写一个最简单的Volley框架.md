@@ -1,13 +1,35 @@
-# 一起写一个最简单的Volley框架
+---
+title: 一起写一个最简单的volley框架
 
-* [Request](#request)
-* [Response](#response)
-* [RequestQueue](#requestqueue)
-* [NetworkDispatcher](#networkdispatcher)
-* [HttpStack](#httpstack)
-* [UrlHttpStack](#urlhttpstack)
-* [Delivery](#delivery)
-* [SimpleVolley](#simplevolley)
+date: 2017-10-25
+
+categories: 
+   - Android
+   - Volley
+
+tags: 
+   - Android 
+   - Volley
+   - 网络 
+
+description: ​
+---
+
+
+<!-- TOC -->
+
+- [Request](#request)
+- [Response](#response)
+- [RequestQueue](#requestqueue)
+- [NetworkDispatcher](#networkdispatcher)
+- [HttpStack](#httpstack)
+- [UrlHttpStack](#urlhttpstack)
+- [Delivery](#delivery)
+- [SimpleVolley](#simplevolley)
+
+<!-- /TOC -->
+
+
 
 [源码地址github](https://github.com/fanshanhong/simple-volley)
 

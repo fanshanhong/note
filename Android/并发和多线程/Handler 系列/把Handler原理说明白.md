@@ -1,4 +1,20 @@
+---
 
+title: 把Handler原理说明白
+
+date: 2018-08-10 
+
+categories: 
+   - Android
+   - Handler 
+
+tags: 
+   - Android 
+   - Handler 
+
+description: ​
+
+---
 
 
 # 把Handler原理说明白

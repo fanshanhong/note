@@ -1,9 +1,46 @@
 ---
-title: 2017-7-12 HttpClient
-tags: HttpClient
-grammar_cjkRuby: true
+title: HttpClient的使用
+
+date: 2017-7-12
+
+categories: 
+   - Android
+   - 性能优化
+
+tags: 
+   - Android 
+   - HttpClient 
+
+description: ​
 ---
 
+
+<!-- TOC -->
+
+- [0.简要介绍](#0简要介绍)
+- [1.基础内容](#1基础内容)
+    - [1.1Http Request](#11http-request)
+        - [1.1.1请求的URI](#111请求的uri)
+        - [1.1.2 HTTP请求拦截器](#112-http请求拦截器)
+    - [1.2Http Response](#12http-response)
+        - [1.2.1 HTTP响应](#121-http响应)
+        - [1.2.2 响应控制器](#122-响应控制器)
+    - [1.3 Http Entity](#13-http-entity)
+        - [1.3.1 使用HTTP实体](#131-使用http实体)
+        - [1.3.2 确保低级别资源释放](#132-确保低级别资源释放)
+        - [1.3.3 获取实体内容](#133-获取实体内容)
+        - [1.3.4 生成实体内容](#134-生成实体内容)
+        - [1.3.5 动态内容实体](#135-动态内容实体)
+    - [1.4 上下文](#14-上下文)
+- [2.基础GET方法](#2基础get方法)
+- [3.基础POST方法](#3基础post方法)
+- [4.保留Session, 第二次请求带上第一次请求的Cookie](#4保留session-第二次请求带上第一次请求的cookie)
+- [5.获取访问上下文](#5获取访问上下文)
+- [6.连接池和代理](#6连接池和代理)
+- [7.自动重连](#7自动重连)
+- [8.使用自定义ResponseHandler处理返回的请求](#8使用自定义responsehandler处理返回的请求)
+
+<!-- /TOC -->
 
 
 # 0.简要介绍

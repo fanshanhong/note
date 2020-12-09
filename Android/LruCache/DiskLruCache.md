@@ -1,3 +1,36 @@
+---
+title: DiskLruCache分析
+
+date: 2017-9-15
+
+categories: 
+   - Android
+   - LruCache
+
+tags: 
+   - Android 
+   - LruCache 
+
+description: ​
+---
+
+<!-- TOC -->
+
+- [DiskLruCache分析](#disklrucache分析)
+        - [DiskLruCache介绍](#disklrucache介绍)
+        - [初探](#初探)
+        - [DiskLruCache的使用](#disklrucache的使用)
+            - [打开一个缓存](#打开一个缓存)
+            - [写入缓存](#写入缓存)
+            - [读取缓存](#读取缓存)
+            - [移除缓存](#移除缓存)
+            - [其他API](#其他api)
+            - [解读journal](#解读journal)
+
+<!-- /TOC -->
+
+
+
 # DiskLruCache分析
 
 ### DiskLruCache介绍

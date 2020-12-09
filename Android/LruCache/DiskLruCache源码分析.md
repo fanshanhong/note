@@ -1,4 +1,31 @@
-# DisjLruCache源码分析
+---
+title: DiskLruCache分析
+
+date: 2017-9-18
+
+categories: 
+   - Android
+   - DiskLruCache
+
+tags: 
+   - Android 
+   - DiskLruCache 
+
+description: ​
+---
+
+<!-- TOC -->
+
+- [DiskLruCache源码分析](#disklrucache源码分析)
+        - [类说明](#类说明)
+        - [先看类声明和成员变量](#先看类声明和成员变量)
+        - [open方法](#open方法)
+        - [Editor](#editor)
+
+<!-- /TOC -->
+
+
+# DiskLruCache源码分析
 
 给出DiskLruCache的地址：
 *  https://android.googlesource.com/platform/libcore/+/android-4.1.1_r1/luni/src/main/java/libcore/io/DiskLruCache.java

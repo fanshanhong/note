@@ -1,4 +1,30 @@
+---
 
+title: 把AsyncTask原理说明白
+
+date: 2018-06-08 
+
+categories: 
+
+   - Android
+   - 并发和多线程
+   - AsyncTask 
+
+tags: 
+
+   - Android 
+   - AsyncTask 
+
+description: ​
+
+---
+
+<!-- TOC -->
+
+- [把 AsyncTask 原理说明白](#把-asynctask-原理说明白)
+    - [AsyncTask使用介绍](#asynctask使用介绍)
+
+<!-- /TOC -->
 
 
 

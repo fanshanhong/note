@@ -1,8 +1,22 @@
 ---
-title: Google官方Android性能优化典范第2季
-tags: Android， 性能优化
-grammar_cjkRuby: true
+title: Android性能优化第2季
+
+date: 2017-7-26
+
+categories: 
+   - Android
+   - 性能优化
+
+tags: 
+   - Android 
+   - U性能优化 
+
+description: ​
 ---
+
+
+
+
 
 # 1.Battery Drain and Networking（电量消耗和网络）
 ---

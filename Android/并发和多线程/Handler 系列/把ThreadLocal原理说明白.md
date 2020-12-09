@@ -1,14 +1,12 @@
-
 ---
 
 title: 把 ThreadLocal 原理说明白 
 
-date: 2019-05-08 
+date: 2018-09-08 
 
 categories: 
    - Android
-        - 并发和多线程
-              - Handler 系列 
+   - 并发和多线程
 
 tags: 
     - Android 

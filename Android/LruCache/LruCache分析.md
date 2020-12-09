@@ -1,3 +1,30 @@
+---
+title: LruCache的介绍
+
+date: 2017-9-5
+
+categories: 
+   - Android
+   - LruCache
+
+tags: 
+   - Android 
+   - LruCache 
+
+description: ​
+---
+
+
+<!-- TOC -->
+
+- [LruCache的介绍](#lrucache的介绍)
+- [LruCache的使用](#lrucache的使用)
+- [LruCache整体分析](#lrucache整体分析)
+- [LruCache原理](#lrucache原理)
+- [LruCache源码分析](#lrucache源码分析)
+
+<!-- /TOC -->
+
 
 ## LruCache的介绍
 

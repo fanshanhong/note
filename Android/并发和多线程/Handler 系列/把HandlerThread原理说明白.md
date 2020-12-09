@@ -1,5 +1,32 @@
+---
+
+title: 把Handler原理说明白
+
+date: 2018-08-14 
+
+categories: 
+
+   - Android
+   - Handler 
+
+tags: 
+
+   - Android 
+   - Handler 
+
+description: ​
+
+---
 
 
+<!-- TOC -->
+
+- [把 HandlerThread 原理说明白](#把-handlerthread-原理说明白)
+    - [HandlerThread 是什么](#handlerthread-是什么)
+    - [HandlerThread 基本用法](#handlerthread-基本用法)
+    - [HandlerThread 源码分析](#handlerthread-源码分析)
+
+<!-- /TOC -->
 
 
 # 把 HandlerThread 原理说明白
