@@ -1,20 +1,27 @@
+---
+title: TextEditingController说明
+
+date: 2019-03-24
+
+categories: 
+   - Flutter
+
+tags: 
+   - Flutter 
+
+
+description: ​
+---
+
+
 这里我们以给 `TextField` 主动赋值为例，其实 Flutter 中，给有状态的 Widget 传递状态或者数据，一般都是通过各种 controller 
 
-
-
-TextEditingController 其实 extends   ValueNotifier  extends ChangeNotifier
-
-
-
-TextEditingController 可以构造
+`TextEditingController` 可以构造
 
 ```dart
 TextEditingController({ String text })
     : super(text == null ? TextEditingValue.empty : TextEditingValue(text: text));
 ```
-
-
-
 
 
 当给TextField 赋值的时候， 可以
@@ -31,15 +38,16 @@ controller.text = ’123456‘;
 
 
 
+TextEditingController 其实 `extends   ValueNotifier  extends ChangeNotifier`
 
+对ValueNotifier不明白的，建议先看明白： [ChangeNotifier的使用](https://github.com/fanshanhong/note/blob/master/Flutter/ChangeNotifier%E7%9A%84%E4%BD%BF%E7%94%A8.md)
 
-TextEditingController 其实 extends   ValueNotifier  extends ChangeNotifier
 
 其内部维护了一个value
 
 
 
-controller.value=xx 其实是调用 其set方法. Set 之后就会notify。
+`controller.value=xx` 其实是调用 其set方法. Set 之后就会notify。
 
 
 
@@ -111,4 +119,4 @@ controller.value=xx
 
 
 
-都可以修改TextField的值。 并且不需要 setState了；额。
+都可以修改TextField的值。 并且不需要 setState了。

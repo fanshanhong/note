@@ -1,5 +1,27 @@
-InheritedWidget
+---
+title: InheritedWidget
 
+date: 2019-03-18
+
+categories: 
+   - Flutter
+
+tags: 
+   - Flutter 
+
+
+description: ​
+---
+
+<!-- TOC -->
+
+- [InheritedWidget](#inheritedwidget)
+- [didChangeDependencies调用](#didchangedependencies调用)
+- [整体流程](#整体流程)
+
+<!-- /TOC -->
+
+# InheritedWidget
 
 
 InheritedWidget是 Flutter 中的一种功能型组件  ， 用于实现 Flutter 组件之间的数据共享。其数据传递方向在Widget 树传递是从上到下的。
@@ -216,7 +238,7 @@ class ShareDataWidget extends InheritedWidget {
 
 
 
-## didChangeDependencies调用
+# didChangeDependencies调用
 
 - 继承StatefulWidget时State对象有一个回调didChangeDependencies，它会在“依赖”发生变化时被Flutter Framework调用。
    而这个“依赖”指的就是是否使用了父widget中InheritedWidget的数据，如果使用了，则代表有依赖，如果没有使用则代表没有依赖。
@@ -314,6 +336,7 @@ class ShareDataWidget extends InheritedWidget {
 
 
 
+# 整体流程
 
 最后说一下整体的流程
 
@@ -408,8 +431,6 @@ tip：Theme 和 Locale(当前语言环境)都是用InheritedWidget 来实现的�
 链接：https://www.jianshu.com/p/19b053fa0819
 来源：简书
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
-
 
 作者：maoqitian
 链接：https://www.jianshu.com/p/ce05ad0bdb1f

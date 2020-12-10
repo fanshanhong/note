@@ -1,4 +1,25 @@
-Provider源码分析 基于 Provider3.1.0
+---
+title: Provider源码分析 基于Provider3.1.0
+
+date: 2019-03-21
+
+categories: 
+   - Flutter
+
+tags: 
+   - Flutter 
+
+
+description: ​
+---
+
+<!-- TOC -->
+
+- [Provider源码分析 基于Provider3.1.0](#provider源码分析-基于provider310)
+
+<!-- /TOC -->
+
+# Provider源码分析 基于Provider3.1.0
 
 
 

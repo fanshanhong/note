@@ -1,28 +1,45 @@
+---
+title: ChangeNotifier的使用
+
+date: 2019-03-05
+
+categories: 
+   - Flutter
+
+tags: 
+   - Flutter 
 
 
-根是 Listenable
+description: ​
+---
+
+<!-- TOC -->
+
+- [Listenable](#listenable)
+- [ValueListenable](#valuelistenable)
+- [ChangeNotifier](#changenotifier)
+- [ChangeNotifier 使用](#changenotifier-使用)
+- [ValueNotifier 使用](#valuenotifier-使用)
+
+<!-- /TOC -->
 
 
+# Listenable
 
-翻译一下：
-
-一个对象，维护了一系列的监听器。
-
-这些监听器通常用于去通知客户端 object被更新了。
-
-
-
-两个变种的接口：ValueListenable   Animation
+ChangeNotifier的根是 Listenable
 
 
 
 ```dart
 /// An object that maintains a list of listeners.
+/// 一个对象，维护了一系列的监听器。
 ///
 /// The listeners are typically used to notify clients that the object has been
 /// updated.
+/// 这些监听器通常用于去通知客户端 object被更新了。
 ///
 /// There are two variants of this interface:
+/// 两个变种的接口：ValueListenable   Animation
 ///
 ///  * [ValueListenable], an interface that augments the [Listenable] interface
 ///    with the concept of a _current value_.
@@ -64,10 +81,10 @@ abstract class Listenable {
 
 
 
+# ValueListenable
 
 
-
-ValueListenable这个就是里面多维护了一个value
+ValueListenable 这个就是Listenable里面多维护了一个value
 
 ```dart
 /// An interface for subclasses of [Listenable] that expose a [value].
@@ -87,7 +104,7 @@ abstract class ValueListenable<T> extends Listenable {
 
 
 
-
+# ChangeNotifier
 
 
 
@@ -98,8 +115,6 @@ class ChangeNotifier implements Listenable {
 ```
 
 ChangeNotifier继承自Listenable， 里面维护了一些监听器
-
-
 
 ValueNotifier 相比较 ChangeNotifier 是里面多了一个value
 
@@ -130,9 +145,7 @@ class ValueNotifier<T> extends ChangeNotifier implements ValueListenable<T> {
 
 
 
-
-
-
+# ChangeNotifier 使用
 
 ChangeNotifier 使用：先注册监听器， 再需要触发的时候调用notify就行了。
 
@@ -179,9 +192,9 @@ RaisedButton(
 
 
 
+# ValueNotifier 使用
 
 ValueNotifier 使用:
-
 
 
 这个里面维护了一个value， 并且set的时候， 自动会notify， 因此不需要手动调用notify了。
