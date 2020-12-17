@@ -1,4 +1,38 @@
+---
+title: Metadata说明
+
+date: 2020-01-16
+
+categories:
+   - Metadata
+
+tags:
+   - Metadata
+
+
+description: ​
+--------------
+
 from:https://dataedo.com/kb/data-glossary/what-is-metadata
+
+
+<!-- TOC -->
+
+- [Typical metadata](#typical-metadata)
+- [A photo](#a-photo)
+- [A book](#a-book)
+- [A blog post](#a-blog-post)
+- [Email](#email)
+- [Word document](#word-document)
+- [A spreadsheet](#a-spreadsheet)
+- [Relational database](#relational-database)
+    - [Discover and share database metadata](#discover-and-share-database-metadata)
+- [Computer files](#computer-files)
+- [Web page](#web-page)
+- [Paper files](#paper-files)
+- [Summary](#summary)
+
+<!-- /TOC -->
 
 
 
