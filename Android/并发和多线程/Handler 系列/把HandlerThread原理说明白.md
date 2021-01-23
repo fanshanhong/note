@@ -1,18 +1,18 @@
 ---
 
-title: 把Handler原理说明白
+title: 把HandlerThread原理说明白
 
 date: 2018-08-14 
 
 categories: 
 
    - Android
-   - Handler 
+   - HandlerThread 
 
 tags: 
 
    - Android 
-   - Handler 
+   - HandlerThread 
 
 description: ​
 
