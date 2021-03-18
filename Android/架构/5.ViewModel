@@ -1,0 +1,8 @@
+Error: Default interface methods are only supported starting with Android N (--min-api 24): void androidx.lifecycle.DefaultLifecycleObserver.onCreate(androidx.lifecycle.LifecycleOwner)
+
+解决：
+//指定jdk版本
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
