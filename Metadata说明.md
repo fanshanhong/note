@@ -1,4 +1,5 @@
 ---
+
 title: Metadata说明
 
 date: 2020-01-16
@@ -10,8 +11,9 @@ tags:
    - Metadata
 
 
-description: ​
---------------
+description: 
+​
+---
 
 from:https://dataedo.com/kb/data-glossary/what-is-metadata
 

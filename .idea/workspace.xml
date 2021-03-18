@@ -1,10 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39a1d86a-a3af-4c3d-a9df-9fb328af7afa" name="Default Changelist" comment="Android性能优化23 图床切换完成">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+    <list default="true" id="39a1d86a-a3af-4c3d-a9df-9fb328af7afa" name="Default Changelist" comment="添加hexo标题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/并发和多线程/AsyncTask 系列/把Callable和Future说明白.md" beforeDir="false" afterPath="$PROJECT_DIR$/Android/并发和多线程/AsyncTask 系列/把Callable和Future说明白.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/架构/1.DataBinding.md" beforeDir="false" afterPath="$PROJECT_DIR$/Android/架构/1.DataBinding.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/架构/3.MVVM.md" beforeDir="false" afterPath="$PROJECT_DIR$/Android/架构/3.MVVM.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Android/架构/4.onSaveInstanceState()和onRestoreInstanceState()使用详解.md" beforeDir="false" afterPath="$PROJECT_DIR$/Android/架构/4.onSaveInstanceState()和onRestoreInstanceState()使用详解.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/架构/5.ViewModel.md" beforeDir="false" afterPath="$PROJECT_DIR$/Android/架构/5.ViewModel.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/架构/6.LiveData.md" beforeDir="false" afterPath="$PROJECT_DIR$/Android/架构/6.LiveData.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/English/1.学习方法及资源.md" beforeDir="false" afterPath="$PROJECT_DIR$/English/1.学习方法及资源.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gradle/14.Android打包过程.md" beforeDir="false" afterPath="$PROJECT_DIR$/Gradle/14.Android打包过程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gradle/15.APK安装卸载过程.md" beforeDir="false" afterPath="$PROJECT_DIR$/Gradle/15.APK安装卸载过程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/0.Http协议.md" beforeDir="false" afterPath="$PROJECT_DIR$/Http/0.Http协议.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/1.Apache 和 Tomcat 区别.md" beforeDir="false" afterPath="$PROJECT_DIR$/Http/1.Apache 和 Tomcat 区别.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/14.HTTPS验证.md" beforeDir="false" afterPath="$PROJECT_DIR$/Http/14.HTTPS验证.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/15.Keytool简介.md" beforeDir="false" afterPath="$PROJECT_DIR$/Http/15.Keytool简介.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/Java字符集.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java/Java字符集.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/泛型总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java/泛型总结.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Metadata说明.md" beforeDir="false" afterPath="$PROJECT_DIR$/Metadata说明.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/13.MappedByteBuffer.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/13.MappedByteBuffer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/14.transferTo和transferFrom.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/14.transferTo和transferFrom.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/15.Java clone和深拷贝浅拷贝.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/15.Java clone和深拷贝浅拷贝.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/16.Netty及其线程模型.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/16.Netty及其线程模型.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/17.1.ChannelPipline.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/17.1.ChannelPipline.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/17.2.ChannelHandler.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/17.2.ChannelHandler.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/17.3.ChannelHandlerContext.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/17.3.ChannelHandlerContext.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/17.4.ChannelHandlerContext、ChannelHandler pipeline 之间的关系.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/17.4.ChannelHandlerContext、ChannelHandler pipeline 之间的关系.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/17.5.Channel注册流程.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/17.5.Channel注册流程.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/17.6.inEventLoop说明.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/17.6.inEventLoop说明.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/17.7.sync解惑.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/17.7.sync解惑.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/17.8.Netty的异步模型.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/17.8.Netty的异步模型.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/17.Channel.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/17.Channel.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/17.任务队列.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/17.任务队列.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/18.ChannelOptions和常量池.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/18.ChannelOptions和常量池.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/19.0.ByteBuf.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/19.0.ByteBuf.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/19.1.ByteBuf2.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/19.1.ByteBuf2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/19.2.Unpooled.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/19.2.Unpooled.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/19.3.CompositeBuffer.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/19.3.CompositeBuffer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/19.4.ByteBuf与ByteBuffer对比.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/19.4.ByteBuf与ByteBuffer对比.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/22.1.ChannelInboundHandler.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/22.1.ChannelInboundHandler.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/22.1.SimpleChannelInboundHandler 和 ChannelInboundHandlerAdapter.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/22.1.SimpleChannelInboundHandler 和 ChannelInboundHandlerAdapter.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/22.2.ReferenceCounted.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/22.2.ReferenceCounted.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/22.3.writeAndFlush.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/22.3.writeAndFlush.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/23.ReplyingDecoder.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/23.ReplyingDecoder.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/24.心跳.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/24.心跳.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/25.粘包和拆包.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/25.粘包和拆包.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty/7.NIO Buffer.md" beforeDir="false" afterPath="$PROJECT_DIR$/Netty/7.NIO Buffer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown常用语法.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown常用语法.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616055451230</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="onSaveInstanceState()和onRestoreInstanceState()使用详解">
+      <created>1616055627547</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1616055627547</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -338,7 +389,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Netty介绍" />
     <MESSAGE value="java字符集" />
     <MESSAGE value="NIO介绍" />
     <MESSAGE value="BIO介绍" />
@@ -363,25 +413,26 @@
     <MESSAGE value="MVVM and Jetpack 相关内容暂时提交" />
     <MESSAGE value="Flutter pubspec.yaml中的依赖版本号之前的 ^" />
     <MESSAGE value="添加hexo标题" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加hexo标题" />
+    <MESSAGE value="onSaveInstanceState()和onRestoreInstanceState()使用详解" />
+    <option name="LAST_COMMIT_MESSAGE" value="onSaveInstanceState()和onRestoreInstanceState()使用详解" />
   </component>
   <component name="WindowStateProjectService">
     <state x="659" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616053435666">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
     <state x="659" y="331" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.999@0.23.1920.999" timestamp="1616053435666" />
-    <state x="518" y="97" key="CommitChangelistDialog2" timestamp="1616055450782">
+    <state x="518" y="97" key="CommitChangelistDialog2" timestamp="1616056760636">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
-    <state x="518" y="97" key="CommitChangelistDialog2/0.23.1920.999@0.23.1920.999" timestamp="1616055450782" />
-    <state x="560" y="262" key="Vcs.Push.Dialog.v2" timestamp="1616055452736">
+    <state x="518" y="97" key="CommitChangelistDialog2/0.23.1920.999@0.23.1920.999" timestamp="1616056760636" />
+    <state x="560" y="262" key="Vcs.Push.Dialog.v2" timestamp="1616055628790">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
-    <state x="560" y="262" key="Vcs.Push.Dialog.v2/0.23.1920.999@0.23.1920.999" timestamp="1616055452736" />
-    <state x="652" y="277" width="615" height="490" key="find.popup" timestamp="1616053620648">
+    <state x="560" y="262" key="Vcs.Push.Dialog.v2/0.23.1920.999@0.23.1920.999" timestamp="1616055628790" />
+    <state x="652" y="277" width="615" height="490" key="find.popup" timestamp="1616056630521">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
-    <state x="652" y="277" width="615" height="490" key="find.popup/0.23.1920.999@0.23.1920.999" timestamp="1616053620648" />
+    <state x="652" y="277" width="615" height="490" key="find.popup/0.23.1920.999@0.23.1920.999" timestamp="1616056630521" />
   </component>
   <component name="masterDetails">
     <states>
