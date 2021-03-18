@@ -1,3 +1,20 @@
+---
+
+title: Gradle系列
+
+date: 2021-12-12
+
+categories: 
+
+   - Kotlin
+
+tags: 
+
+   - Kotlin 
+
+description: ​
+---
+
 # Gradle系列
 
 [1.Gradle入门](https://github.com/fanshanhong/note/blob/master/Gradle/1.Gradle%E5%85%A5%E9%97%A8.md)
