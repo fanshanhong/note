@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="39a1d86a-a3af-4c3d-a9df-9fb328af7afa" name="Default Changelist" comment="Android性能优化23 图床切换完成">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator-enh.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/work.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Flutter/Flutter的pubspec.yaml中的依赖版本号之前的插入号（^）是什么？.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>logo.png</find>
+      <find>https://www.zybuluo.com/static/img/logo.png</find>
+      <find>.jpg</find>
+      <find>https://dataedo.com/asset/img/kb/glossary/</find>
+      <find>img</find>
+      <find>http</find>
+      <find>https://cdn.jsde</find>
+      <find>750</find>
+      <find>556</find>
+      <find>http://</find>
+      <find>.jpeg</find>
+      <find>jpeg</find>
+      <find>通常来说，单个的GC并不会占用太多时间，</find>
+      <find>http://hukai.me/images/</find>
+      <find>.png</find>
+      <find>9801</find>
+      <find>8307</find>
+      <find>6084</find>
+      <find>6702</find>
+      <find>5830</find>
+      <find>6357</find>
+      <find>image-</find>
+      <find>830</find>
+      <find>png</find>
+      <find>2038</find>
+      <find>，</find>
+      <find>传统IO</find>
+      <find>legacy</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>https://cdn.jsdelivr.net/gh/fanshanhong/note-image/imglogo.png</replace>
+      <replace>https://cdn.jsdelivr.net/gh/fanshanhong/note-image/</replace>
+      <replace>,</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/Netty</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="999" />
+  </component>
+  <component name="ProjectId" id="1pvAEXD2wYAbCs35DDYVRD4HvdC" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Android/性能优化" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="39a1d86a-a3af-4c3d-a9df-9fb328af7afa" name="Default Changelist" comment="" />
+      <created>1607393261061</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607393261061</updated>
+    </task>
+    <task id="LOCAL-00001" summary="图床切换">
+      <created>1607396404258</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607396404258</updated>
+    </task>
+    <task id="LOCAL-00002" summary="LruCache 图床切换完成">
+      <created>1607410878385</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607410878385</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Volley 图床切换完成">
+      <created>1607411011945</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607411011945</updated>
+    </task>
+    <task id="LOCAL-00004" summary="handler图床切换完成">
+      <created>1607413318223</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607413318223</updated>
+    </task>
+    <task id="LOCAL-00005" summary="线程同步图床切换完成">
+      <created>1607413374897</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607413374897</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Android性能优化1 图床切换完成">
+      <created>1607415324942</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607415324942</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Android性能优化23 图床切换完成">
+      <created>1607418201543</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607418201543</updated>
+    </task>
+    <task id="LOCAL-00008" summary="图床切换完成">
+      <created>1607438865469</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607438865470</updated>
+    </task>
+    <task id="LOCAL-00009" summary="添加tag 和 category">
+      <created>1607480722713</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607480722713</updated>
+    </task>
+    <task id="LOCAL-00010" summary="添加目录和标题">
+      <created>1607511211231</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607511211231</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Flutter / Git 目录标题整理">
+      <created>1607591323541</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607591323541</updated>
+    </task>
+    <task id="LOCAL-00012" summary="HTTP和Java整理">
+      <created>1607593273159</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607593273159</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Netty介绍">
+      <created>1607679421601</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607679421601</updated>
+    </task>
+    <task id="LOCAL-00014" summary="java字符集">
+      <created>1607679661570</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1607679661570</updated>
+    </task>
+    <task id="LOCAL-00015" summary="NIO介绍">
+      <created>1607953830463</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1607953830463</updated>
+    </task>
+    <task id="LOCAL-00016" summary="BIO介绍">
+      <created>1607953988301</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1607953988301</updated>
+    </task>
+    <task id="LOCAL-00017" summary="NIO Buffer">
+      <created>1608172448452</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1608172448452</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Metadata 和 Markdown">
+      <created>1608172607955</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1608172607956</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Java字符集">
+      <created>1608195363177</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1608195363177</updated>
+    </task>
+    <task id="LOCAL-00020" summary="NIO Buffer">
+      <created>1608197779982</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1608197779982</updated>
+    </task>
+    <task id="LOCAL-00021" summary="NIO实现客户端和服务器">
+      <created>1608630640931</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1608630640931</updated>
+    </task>
+    <task id="LOCAL-00022" summary="NIO实现简单群聊">
+      <created>1608714563004</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1608714563004</updated>
+    </task>
+    <task id="LOCAL-00023" summary="zerocopy">
+      <created>1608779574935</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1608779574935</updated>
+    </task>
+    <task id="LOCAL-00024" summary="MappedByteBuffer 和 DirectBuffer">
+      <created>1611382268810</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1611382268810</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Gradle/Task/Project">
+      <created>1611558014713</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1611558014713</updated>
+    </task>
+    <task id="LOCAL-00026" summary="分支管理">
+      <created>1611655509062</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1611655509062</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Gradle/Task/Project">
+      <created>1611655576693</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1611655576693</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Gradle生命周期">
+      <created>1611741905134</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1611741905134</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Gradle 插件">
+      <created>1611826887514</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1611826887514</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Android Gradle 插件">
+      <created>1611911699386</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1611911699386</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Android Gradle 插件">
+      <created>1612144217876</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1612144217876</updated>
+    </task>
+    <task id="LOCAL-00032" summary="MacOS环境变量">
+      <created>1612144232804</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1612144232804</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Gradle相关问题总结">
+      <created>1612611062908</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1612611062909</updated>
+    </task>
+    <task id="LOCAL-00034" summary="English">
+      <created>1612611135622</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1612611135622</updated>
+    </task>
+    <task id="LOCAL-00035" summary="backing field">
+      <created>1612611189580</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1612611189580</updated>
+    </task>
+    <task id="LOCAL-00036" summary="守护进程 &amp; backing field">
+      <created>1612765544512</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1612765544512</updated>
+    </task>
+    <task id="LOCAL-00037" summary="MVVM and Jetpack 相关内容暂时提交">
+      <created>1616053130919</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1616053130919</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Flutter / Git 目录标题整理" />
+    <MESSAGE value="HTTP和Java整理" />
+    <MESSAGE value="Netty介绍" />
+    <MESSAGE value="java字符集" />
+    <MESSAGE value="NIO介绍" />
+    <MESSAGE value="BIO介绍" />
+    <MESSAGE value="Metadata 和 Markdown" />
+    <MESSAGE value="Java字符集" />
+    <MESSAGE value="NIO Buffer" />
+    <MESSAGE value="NIO实现客户端和服务器" />
+    <MESSAGE value="NIO实现简单群聊" />
+    <MESSAGE value="zerocopy" />
+    <MESSAGE value="MappedByteBuffer 和 DirectBuffer" />
+    <MESSAGE value="Android性能优化23 图床切换完成" />
+    <MESSAGE value="分支管理" />
+    <MESSAGE value="Gradle/Task/Project" />
+    <MESSAGE value="Gradle生命周期" />
+    <MESSAGE value="Gradle 插件" />
+    <MESSAGE value="Android Gradle 插件" />
+    <MESSAGE value="MacOS环境变量" />
+    <MESSAGE value="Gradle相关问题总结" />
+    <MESSAGE value="English" />
+    <MESSAGE value="backing field" />
+    <MESSAGE value="守护进程 &amp; backing field" />
+    <MESSAGE value="MVVM and Jetpack 相关内容暂时提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVVM and Jetpack 相关内容暂时提交" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="518" y="97" key="CommitChangelistDialog2" timestamp="1616053130283">
+      <screen x="0" y="23" width="1920" height="999" />
+    </state>
+    <state x="518" y="97" key="CommitChangelistDialog2/0.23.1920.999@0.23.1920.999" timestamp="1616053130283" />
+    <state x="560" y="262" key="Vcs.Push.Dialog.v2" timestamp="1616053132282">
+      <screen x="0" y="23" width="1920" height="999" />
+    </state>
+    <state x="560" y="262" key="Vcs.Push.Dialog.v2/0.23.1920.999@0.23.1920.999" timestamp="1616053132282" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
