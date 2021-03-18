@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="39a1d86a-a3af-4c3d-a9df-9fb328af7afa" name="Default Changelist" comment="Android性能优化23 图床切换完成">
       <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator-enh.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/work.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flutter/Flutter的pubspec.yaml中的依赖版本号之前的插入号（^）是什么？.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android/架构/4.onSaveInstanceState()和onRestoreInstanceState()使用详解.md" beforeDir="false" afterPath="$PROJECT_DIR$/Android/架构/4.onSaveInstanceState()和onRestoreInstanceState()使用详解.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,46 +13,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>logo.png</find>
-      <find>https://www.zybuluo.com/static/img/logo.png</find>
-      <find>.jpg</find>
-      <find>https://dataedo.com/asset/img/kb/glossary/</find>
-      <find>img</find>
-      <find>http</find>
-      <find>https://cdn.jsde</find>
-      <find>750</find>
-      <find>556</find>
-      <find>http://</find>
-      <find>.jpeg</find>
-      <find>jpeg</find>
-      <find>通常来说，单个的GC并不会占用太多时间，</find>
-      <find>http://hukai.me/images/</find>
-      <find>.png</find>
-      <find>9801</find>
-      <find>8307</find>
-      <find>6084</find>
-      <find>6702</find>
-      <find>5830</find>
-      <find>6357</find>
-      <find>image-</find>
-      <find>830</find>
-      <find>png</find>
-      <find>2038</find>
-      <find>，</find>
-      <find>传统IO</find>
-      <find>legacy</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>https://cdn.jsdelivr.net/gh/fanshanhong/note-image/imglogo.png</replace>
-      <replace>https://cdn.jsdelivr.net/gh/fanshanhong/note-image/</replace>
-      <replace>,</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/Netty</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -355,7 +310,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616053130919</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Flutter pubspec.yaml中的依赖版本号之前的 ^">
+      <created>1616053652373</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1616053652373</updated>
+    </task>
+    <task id="LOCAL-00039" summary="添加hexo标题">
+      <created>1616055451230</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1616055451230</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -369,8 +338,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Flutter / Git 目录标题整理" />
-    <MESSAGE value="HTTP和Java整理" />
     <MESSAGE value="Netty介绍" />
     <MESSAGE value="java字符集" />
     <MESSAGE value="NIO介绍" />
@@ -394,17 +361,27 @@
     <MESSAGE value="backing field" />
     <MESSAGE value="守护进程 &amp; backing field" />
     <MESSAGE value="MVVM and Jetpack 相关内容暂时提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="MVVM and Jetpack 相关内容暂时提交" />
+    <MESSAGE value="Flutter pubspec.yaml中的依赖版本号之前的 ^" />
+    <MESSAGE value="添加hexo标题" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加hexo标题" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="518" y="97" key="CommitChangelistDialog2" timestamp="1616053130283">
+    <state x="659" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616053435666">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
-    <state x="518" y="97" key="CommitChangelistDialog2/0.23.1920.999@0.23.1920.999" timestamp="1616053130283" />
-    <state x="560" y="262" key="Vcs.Push.Dialog.v2" timestamp="1616053132282">
+    <state x="659" y="331" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.999@0.23.1920.999" timestamp="1616053435666" />
+    <state x="518" y="97" key="CommitChangelistDialog2" timestamp="1616055450782">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
-    <state x="560" y="262" key="Vcs.Push.Dialog.v2/0.23.1920.999@0.23.1920.999" timestamp="1616053132282" />
+    <state x="518" y="97" key="CommitChangelistDialog2/0.23.1920.999@0.23.1920.999" timestamp="1616055450782" />
+    <state x="560" y="262" key="Vcs.Push.Dialog.v2" timestamp="1616055452736">
+      <screen x="0" y="23" width="1920" height="999" />
+    </state>
+    <state x="560" y="262" key="Vcs.Push.Dialog.v2/0.23.1920.999@0.23.1920.999" timestamp="1616055452736" />
+    <state x="652" y="277" width="615" height="490" key="find.popup" timestamp="1616053620648">
+      <screen x="0" y="23" width="1920" height="999" />
+    </state>
+    <state x="652" y="277" width="615" height="490" key="find.popup/0.23.1920.999@0.23.1920.999" timestamp="1616053620648" />
   </component>
   <component name="masterDetails">
     <states>
