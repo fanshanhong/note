@@ -116,7 +116,7 @@ context.getSystemService() 最终会调用到： ContextImpl中getSystemService(
 
 这里我们可以看到SystemServiceRegistry类的static静态方法区中注册了一系列的服务，而我们的WindowManagerImpl实例对象也被注册到了里面.
 
-那为啥就说 通过这个 WindowManager 就能喝 WMS 通信了呢？  WindowManager 不是 继承自  ViewManager 么？
+那为啥就说 通过这个 WindowManager 就能和 WMS 通信了呢？  WindowManager 不是 继承自  ViewManager 么？
 
 因为这里 createService。当我们getSystemService的时候，拿到的是这里返回的 WindowManagerImpl对象。在 WindowManagerImpl对象中，持有 `private final WindowManagerGlobal mGlobal = WindowManagerGlobal.getInstance();`。  在这个 Global 中 持有一个：`private static IWindowManager sWindowManagerService;` 这个sWindowManagerService是  WMS 的远端代理 IWindowManager.Stub.Proxy对象。这样，一层一层的，就能通WMS通信了。
 
