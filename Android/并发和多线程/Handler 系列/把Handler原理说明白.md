@@ -28,6 +28,7 @@ description: ​
     - [MessageQueue](#messagequeue)
     - [Looper](#looper)
     - [Message](#message)
+- [总结](#总结)
 
 <!-- /TOC -->
 
@@ -1189,6 +1190,101 @@ Message为我们提供带一系列obtain()方法， 可以传入各种不同的�
 ```
 
 先上锁， 如果当前消息池的数量没有到达最大值， 就把当前Message对象里面的东西清空， 然后把当前对象放在链表的头部。（`next = mPool; mPool = this`  这两行就是做了这个， 把原来的链表接在当前Message的屁股后面）。
+
+
+
+
+# 总结
+
+
+Handler -> Looper -> MessageQueue
+
+
+首先, 在哪个线程执行 Loop.prepare() 就会在那个线程关联 Looper.
+
+
+比如 在 子线程 t1 执行 Looper.prepare()
+```java
+    public static final void prepare() {
+        // 调用Looper的私有构造， 创建一个Looper对象， 放到threadlocal中
+        // 这里之所以要做成ThreadLocal是因为，prepare方法可能在不同的线程中调用，比如main线程，比如需要loop能力的其他子线程， 不管哪个线程使用的时候，比如get set，都只是针对自己线程里面的变量操作，不影响其他线程
+        sThreadLocal.set(new Looper());
+    }
+```
+
+就是 在子线程  t1  对象的 map 中添加一个 <ThreadLocal, Looper>  的键值对.
+
+
+
+prepare 之后, 这个 新的 Looper()对象就是子线程 t1 的内部变量了.  同时,  在 Looper 对象中还新创建了一个 MessageQueue.
+
+然后, 再创建 Handler
+
+```java
+    public Handler() {
+        mLooper = Looper.myLooper();
+        if (mLooper == null) {
+            throw new RuntimeException(
+                "Can't create handler inside thread that has not called Looper.prepare()");
+        }
+        mQueue = mLooper.mQueue;
+        // callback默认为null
+        mCallback = null;
+    }
+
+```
+
+用无参构造创建 Handler, Handler 中的 Looper 对象就是当前线程的那个 Looper.
+
+因此, 我们在 子线程 t1 中 new Handler, 那 Handler 中的 Looper 自然就是刚刚 Looper.prepare() 创建出来并且关联到 t1 上的 Looper 对象了.
+然后 t1 的 mMessageQueue 就是 Looper 的 MessageQueue
+
+
+
+
+
+然后, 我们使用 Handler.sendMessage, 就是把消息发送到 t1 线程的 Looper 的 MessageQueue  里.  
+
+之后Looper.loop 会把这个 messageQueue 的消息取出, 并在 t1 上执行.
+
+
+结论:  Handler 把消息发到哪里, 主要是看这个 Handler 关联的 那个 Looper 呢.
+
+
+在主线程, ActivityThread 中提前做了 Looper.loop().  因此, 我们在主线程上 new Handler, 消息就是发送到主线程了.
+
+在子线程中, new Handler(getMainLooper()), 这样也行, 直接指定 Handler 关联的 Looper 是主线程的, 消息就发送到主线程的 Looper 的 MessageQueue 里了, 然后主线程处理.
+
+在子线程中, new Handler()  如果不明确指定用哪个 Looper, 就是用当前线程的, 那在此之前一定要先 Looper.prepare, 把 Looper 创建出来并关联上. 否则报错的.
+
+
+那, 在主线程, 想把消息发到子线程执行呢?
+```java
+    class LooperThread extends Thread {
+
+        Looper subLooper;
+        
+        public void run() {
+  
+            Looper.prepare();
+            subLooper = Looper.myLooper();
+            Looper.loop();
+        }
+    }
+```
+
+存储一下子线程创建并关联的 Looper, 然后在主线程  创建 Handler 的时候, 指定这个子线程的 Looper,  new Handler(LooperThread.subLooper)  这样就把 Handler 和 子线程的 Looper 关联了. Handler 发消息后, 就是子线程处理了.
+
+
+
+ 结束.
+
+
+
+
+
+
+
 
 
 
