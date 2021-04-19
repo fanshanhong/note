@@ -16,7 +16,30 @@ description:
 ​
 ---
 
+<!-- TOC -->
 
+- [JVM内存结构](#jvm内存结构)
+- [PC Register](#pc-register)
+- [JVM Stacks](#jvm-stacks)
+    - [问题](#问题)
+    - [线程运行诊断](#线程运行诊断)
+        - [CPU占用过高](#cpu占用过高)
+        - [线程很长时间无结果](#线程很长时间无结果)
+    - [栈帧的组成](#栈帧的组成)
+        - [局部变量表](#局部变量表)
+        - [操作数栈](#操作数栈)
+- [Method Area(方法区)](#method-area方法区)
+    - [方法区内存溢出](#方法区内存溢出)
+    - [运行时常量池](#运行时常量池)
+        - [StringTable](#stringtable)
+            - [常量池和 串池之间的关系:](#常量池和-串池之间的关系)
+            - [字符串拼接](#字符串拼接)
+            - [StringTable的位置](#stringtable的位置)
+            - [StringTable垃圾回收机制](#stringtable垃圾回收机制)
+- [Heap](#heap)
+- [Native Method Stacks](#native-method-stacks)
+
+<!-- /TOC -->
 # JVM内存结构
 ![](https://cdn.jsdelivr.net/gh/fanshanhong/note-image/JMM.png)
 
