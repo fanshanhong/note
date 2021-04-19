@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39a1d86a-a3af-4c3d-a9df-9fb328af7afa" name="Default Changelist" comment="LayoutInflate">
-      <change afterPath="$PROJECT_DIR$/Android/系统/View/Android中慎用View#getViewTreeObserver#addOnGlobalLayoutListener来获取view的高度.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/系统/View/RecyclerView的回收复用缓存机制.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/系统/View/RecyclerView绘制流程1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/系统/View/RecyclerView绘制流程2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/系统/View/View layout.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/系统/View/View measure.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/系统/View/ViewStub.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/系统/View/invaliate.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPatterns/动态代理.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_18,_22_23_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_18__22_23__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/JVM/Java内存模型.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/JVM/垃圾回收器.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android/系统/View/View事件派发.md" beforeDir="false" afterPath="$PROJECT_DIR$/Android/系统/View/View事件派发.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/JVM/JVM的内存结构.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java/JVM/JVM的内存结构.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/JVM/分代垃圾回收机制.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java/JVM/分代垃圾回收机制.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,48 +52,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607393261061</updated>
-    </task>
-    <task id="LOCAL-00001" summary="图床切换">
-      <created>1607396404258</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1607396404258</updated>
-    </task>
-    <task id="LOCAL-00002" summary="LruCache 图床切换完成">
-      <created>1607410878385</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1607410878385</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Volley 图床切换完成">
-      <created>1607411011945</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1607411011945</updated>
-    </task>
-    <task id="LOCAL-00004" summary="handler图床切换完成">
-      <created>1607413318223</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1607413318223</updated>
-    </task>
-    <task id="LOCAL-00005" summary="线程同步图床切换完成">
-      <created>1607413374897</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1607413374897</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Android性能优化1 图床切换完成">
-      <created>1607415324942</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1607415324942</updated>
     </task>
     <task id="LOCAL-00007" summary="Android性能优化23 图床切换完成">
       <created>1607418201543</created>
@@ -386,7 +340,63 @@
       <option name="project" value="LOCAL" />
       <updated>1617982898917</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="View绘制">
+      <created>1618192882451</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1618192882451</updated>
+    </task>
+    <task id="LOCAL-00049" summary="View事件派发">
+      <created>1618321788572</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1618321788572</updated>
+    </task>
+    <task id="LOCAL-00050" summary="设计模式-动态代理">
+      <created>1618362300598</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1618362300599</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Glide缓存">
+      <created>1618394663116</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1618394663117</updated>
+    </task>
+    <task id="LOCAL-00052" summary="开源框架">
+      <created>1618483483800</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1618483483800</updated>
+    </task>
+    <task id="LOCAL-00053" summary="线程池/Callable/Future">
+      <created>1618566206011</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1618566206011</updated>
+    </task>
+    <task id="LOCAL-00054" summary="JVM分代垃圾回收机制">
+      <created>1618755810124</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1618755810125</updated>
+    </task>
+    <task id="LOCAL-00055" summary="分代垃圾回收机制">
+      <created>1618794253178</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1618794253179</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -400,13 +410,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="NIO实现简单群聊" />
-    <MESSAGE value="zerocopy" />
-    <MESSAGE value="MappedByteBuffer 和 DirectBuffer" />
-    <MESSAGE value="Android性能优化23 图床切换完成" />
-    <MESSAGE value="分支管理" />
-    <MESSAGE value="Gradle/Task/Project" />
-    <MESSAGE value="Gradle生命周期" />
     <MESSAGE value="Gradle 插件" />
     <MESSAGE value="Android Gradle 插件" />
     <MESSAGE value="MacOS环境变量" />
@@ -423,23 +426,34 @@
     <MESSAGE value="Activity启动" />
     <MESSAGE value="Window" />
     <MESSAGE value="Window的创建" />
-    <MESSAGE value="View事件派发" />
     <MESSAGE value="LayoutInflate" />
-    <option name="LAST_COMMIT_MESSAGE" value="LayoutInflate" />
+    <MESSAGE value="View绘制" />
+    <MESSAGE value="View事件派发" />
+    <MESSAGE value="设计模式-动态代理" />
+    <MESSAGE value="Glide缓存" />
+    <MESSAGE value="开源框架" />
+    <MESSAGE value="线程池/Callable/Future" />
+    <MESSAGE value="JVM分代垃圾回收机制" />
+    <MESSAGE value="分代垃圾回收机制" />
+    <option name="LAST_COMMIT_MESSAGE" value="分代垃圾回收机制" />
   </component>
   <component name="WindowStateProjectService">
     <state x="659" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616053435666">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
     <state x="659" y="331" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.999@0.23.1920.999" timestamp="1616053435666" />
-    <state x="518" y="97" key="CommitChangelistDialog2" timestamp="1617982898229">
+    <state x="518" y="97" key="CommitChangelistDialog2" timestamp="1618794252752">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
-    <state x="518" y="97" key="CommitChangelistDialog2/0.23.1920.999@0.23.1920.999" timestamp="1617982898229" />
-    <state x="560" y="262" key="Vcs.Push.Dialog.v2" timestamp="1617982901351">
+    <state x="518" y="97" key="CommitChangelistDialog2/0.23.1920.999@0.23.1920.999" timestamp="1618794252752" />
+    <state x="192" y="112" key="DiffContextDialog" timestamp="1618566235406">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
-    <state x="560" y="262" key="Vcs.Push.Dialog.v2/0.23.1920.999@0.23.1920.999" timestamp="1617982901351" />
+    <state x="192" y="112" key="DiffContextDialog/0.23.1920.999@0.23.1920.999" timestamp="1618566235406" />
+    <state x="452" y="240" key="Vcs.Push.Dialog.v2" timestamp="1618794257378">
+      <screen x="0" y="23" width="1920" height="999" />
+    </state>
+    <state x="452" y="240" key="Vcs.Push.Dialog.v2/0.23.1920.999@0.23.1920.999" timestamp="1618794257378" />
     <state x="652" y="277" width="615" height="490" key="find.popup" timestamp="1616056630521">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
