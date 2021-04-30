@@ -156,6 +156,11 @@
 [RecyclerView的回收复用缓存机制](https://github.com/fanshanhong/note/blob/master/Android/%E7%B3%BB%E7%BB%9F/View/RecyclerView%E7%9A%84%E5%9B%9E%E6%94%B6%E5%A4%8D%E7%94%A8%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6.md)
 
 
+## RxJava
+
+
+[Rxjava2源码分析](https://github.com/fanshanhong/note/blob/master/Android/Rxjava/Rxjava2%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90.md)
+
 
 # Java
 
@@ -195,11 +200,9 @@
 
 
 
-
 # DesignPatterns
 
 [动态代理](https://github.com/fanshanhong/note/blob/master/DesignPatterns/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86.md)
-
 
 
 
@@ -308,6 +311,12 @@
 # Kotlin
 
 [1.backing field](https://github.com/fanshanhong/note/blob/master/Kotlin/1.backing%20field.md)
+
+[2.Kotlin 双冒号 :: 使用.md](https://github.com/fanshanhong/note/blob/master/Kotlin/2.Kotlin%20%E5%8F%8C%E5%86%92%E5%8F%B7%20::%20%E4%BD%BF%E7%94%A8.md)
+
+[3.flatMap.md](https://github.com/fanshanhong/note/blob/master/Kotlin/3.flatMap.md)
+
+[4.协程](https://github.com/fanshanhong/note/blob/master/Kotlin/6.%E5%8D%8F%E7%A8%8B2.md)
 
 
 

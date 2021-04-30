@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39a1d86a-a3af-4c3d-a9df-9fb328af7afa" name="Default Changelist" comment="LayoutInflate">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_18,_22_23_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_18__22_23__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/JVM/Java内存模型.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/JVM/垃圾回收器.md" afterDir="false" />
+    <list default="true" id="39a1d86a-a3af-4c3d-a9df-9fb328af7afa" name="Default Changelist" comment="Readme目录">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/JVM/JVM的内存结构.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java/JVM/JVM的内存结构.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/JVM/分代垃圾回收机制.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java/JVM/分代垃圾回收机制.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,11 +30,12 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Android/系统/启动" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Android/性能优化" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Android/其他" />
+      <recent name="$PROJECT_DIR$/Android/系统/启动" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -52,48 +48,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607393261061</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Android性能优化23 图床切换完成">
-      <created>1607418201543</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1607418201543</updated>
-    </task>
-    <task id="LOCAL-00008" summary="图床切换完成">
-      <created>1607438865469</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1607438865470</updated>
-    </task>
-    <task id="LOCAL-00009" summary="添加tag 和 category">
-      <created>1607480722713</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1607480722713</updated>
-    </task>
-    <task id="LOCAL-00010" summary="添加目录和标题">
-      <created>1607511211231</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1607511211231</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Flutter / Git 目录标题整理">
-      <created>1607591323541</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1607591323541</updated>
-    </task>
-    <task id="LOCAL-00012" summary="HTTP和Java整理">
-      <created>1607593273159</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1607593273159</updated>
     </task>
     <task id="LOCAL-00013" summary="Netty介绍">
       <created>1607679421601</created>
@@ -396,7 +350,49 @@
       <option name="project" value="LOCAL" />
       <updated>1618794253179</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="JMM">
+      <created>1618850276888</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1618850276890</updated>
+    </task>
+    <task id="LOCAL-00057" summary="HashMap">
+      <created>1618931139727</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1618931139727</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Readme目录">
+      <created>1619425050193</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1619425050194</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Readme目录更新">
+      <created>1619430100777</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1619430100778</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Readme目录">
+      <created>1619430344900</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1619430344900</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Readme目录">
+      <created>1619751386011</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1619751386013</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -410,10 +406,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Gradle 插件" />
-    <MESSAGE value="Android Gradle 插件" />
-    <MESSAGE value="MacOS环境变量" />
-    <MESSAGE value="Gradle相关问题总结" />
     <MESSAGE value="English" />
     <MESSAGE value="backing field" />
     <MESSAGE value="守护进程 &amp; backing field" />
@@ -435,32 +427,50 @@
     <MESSAGE value="线程池/Callable/Future" />
     <MESSAGE value="JVM分代垃圾回收机制" />
     <MESSAGE value="分代垃圾回收机制" />
-    <option name="LAST_COMMIT_MESSAGE" value="分代垃圾回收机制" />
+    <MESSAGE value="JMM" />
+    <MESSAGE value="HashMap" />
+    <MESSAGE value="Readme目录更新" />
+    <MESSAGE value="Readme目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme目录" />
   </component>
   <component name="WindowStateProjectService">
     <state x="659" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616053435666">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
     <state x="659" y="331" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.999@0.23.1920.999" timestamp="1616053435666" />
-    <state x="518" y="97" key="CommitChangelistDialog2" timestamp="1618794252752">
+    <state x="518" y="97" key="CommitChangelistDialog2" timestamp="1619751384745">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
-    <state x="518" y="97" key="CommitChangelistDialog2/0.23.1920.999@0.23.1920.999" timestamp="1618794252752" />
-    <state x="192" y="112" key="DiffContextDialog" timestamp="1618566235406">
-      <screen x="0" y="23" width="1920" height="999" />
+    <state x="518" y="97" key="CommitChangelistDialog2/0.23.1920.996@0.23.1920.996" timestamp="1619430344566" />
+    <state x="518" y="97" key="CommitChangelistDialog2/0.23.1920.997@0.23.1920.997" timestamp="1618931139167" />
+    <state x="518" y="97" key="CommitChangelistDialog2/0.23.1920.999@0.23.1920.999" timestamp="1619751384745" />
+    <state x="192" y="112" key="DiffContextDialog" timestamp="1619422895615">
+      <screen x="0" y="23" width="1920" height="996" />
     </state>
+    <state x="192" y="112" key="DiffContextDialog/0.23.1920.996@0.23.1920.996" timestamp="1619422895615" />
     <state x="192" y="112" key="DiffContextDialog/0.23.1920.999@0.23.1920.999" timestamp="1618566235406" />
-    <state x="452" y="240" key="Vcs.Push.Dialog.v2" timestamp="1618794257378">
+    <state width="846" height="445" key="SwitcherDM" timestamp="1619430162905">
+      <screen x="0" y="23" width="1920" height="996" />
+    </state>
+    <state width="846" height="445" key="SwitcherDM/0.23.1920.996@0.23.1920.996" timestamp="1619430162905" />
+    <state x="452" y="240" key="Vcs.Push.Dialog.v2" timestamp="1619751387551">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
-    <state x="452" y="240" key="Vcs.Push.Dialog.v2/0.23.1920.999@0.23.1920.999" timestamp="1618794257378" />
+    <state x="452" y="240" key="Vcs.Push.Dialog.v2/0.23.1920.996@0.23.1920.996" timestamp="1619430346012" />
+    <state x="452" y="240" key="Vcs.Push.Dialog.v2/0.23.1920.997@0.23.1920.997" timestamp="1618931141336" />
+    <state x="452" y="240" key="Vcs.Push.Dialog.v2/0.23.1920.999@0.23.1920.999" timestamp="1619751387551" />
     <state x="652" y="277" width="615" height="490" key="find.popup" timestamp="1616056630521">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
     <state x="652" y="277" width="615" height="490" key="find.popup/0.23.1920.999@0.23.1920.999" timestamp="1616056630521" />
-    <state x="625" y="243" width="670" height="676" key="search.everywhere.popup" timestamp="1617094827793">
-      <screen x="0" y="23" width="1920" height="999" />
+    <state x="664" y="316" key="git4idea.merge.GitPullDialog" timestamp="1619422849432">
+      <screen x="0" y="23" width="1920" height="996" />
     </state>
+    <state x="664" y="316" key="git4idea.merge.GitPullDialog/0.23.1920.996@0.23.1920.996" timestamp="1619422849432" />
+    <state x="625" y="242" width="670" height="674" key="search.everywhere.popup" timestamp="1619423923973">
+      <screen x="0" y="23" width="1920" height="996" />
+    </state>
+    <state x="625" y="242" width="670" height="674" key="search.everywhere.popup/0.23.1920.996@0.23.1920.996" timestamp="1619423923973" />
     <state x="625" y="243" width="670" height="676" key="search.everywhere.popup/0.23.1920.999@0.23.1920.999" timestamp="1617094827793" />
   </component>
   <component name="masterDetails">
