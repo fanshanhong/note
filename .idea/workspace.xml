@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39a1d86a-a3af-4c3d-a9df-9fb328af7afa" name="Default Changelist" comment="Readme目录">
+      <change afterPath="$PROJECT_DIR$/Android/其他/Fragment生命周期.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/其他/如何清楚易懂的解释“UV和PV＂的定义？.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Http/14.2.自有证书生成过程.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Http/TCP三次握手和四次挥手.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/Error和Exception.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/java静态方法和实例方法以及父子类初始化加载顺序.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/动态代理的两种方式以及区别.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/10.URLEncode.md" beforeDir="false" afterPath="$PROJECT_DIR$/Http/10.URLEncode.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/13.SSLTLS.md" beforeDir="false" afterPath="$PROJECT_DIR$/Http/13.SSLTLS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/14.HTTPS验证.md" beforeDir="false" afterPath="$PROJECT_DIR$/Http/14.HTTPS验证.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +30,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -48,20 +60,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607393261061</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Netty介绍">
-      <created>1607679421601</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1607679421601</updated>
-    </task>
-    <task id="LOCAL-00014" summary="java字符集">
-      <created>1607679661570</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1607679661570</updated>
     </task>
     <task id="LOCAL-00015" summary="NIO介绍">
       <created>1607953830463</created>
@@ -392,7 +390,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619751386013</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Readme目录">
+      <created>1621935160356</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1621935160357</updated>
+    </task>
+    <task id="LOCAL-00063" summary="正则表达式">
+      <created>1622794426087</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1622794426089</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -406,7 +418,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="English" />
     <MESSAGE value="backing field" />
     <MESSAGE value="守护进程 &amp; backing field" />
     <MESSAGE value="MVVM and Jetpack 相关内容暂时提交" />
@@ -431,34 +442,35 @@
     <MESSAGE value="HashMap" />
     <MESSAGE value="Readme目录更新" />
     <MESSAGE value="Readme目录" />
-    <option name="LAST_COMMIT_MESSAGE" value="Readme目录" />
+    <MESSAGE value="正则表达式" />
+    <option name="LAST_COMMIT_MESSAGE" value="正则表达式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="659" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616053435666">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
     <state x="659" y="331" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.999@0.23.1920.999" timestamp="1616053435666" />
-    <state x="518" y="97" key="CommitChangelistDialog2" timestamp="1619751384745">
+    <state x="518" y="97" key="CommitChangelistDialog2" timestamp="1622794425104">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
     <state x="518" y="97" key="CommitChangelistDialog2/0.23.1920.996@0.23.1920.996" timestamp="1619430344566" />
     <state x="518" y="97" key="CommitChangelistDialog2/0.23.1920.997@0.23.1920.997" timestamp="1618931139167" />
-    <state x="518" y="97" key="CommitChangelistDialog2/0.23.1920.999@0.23.1920.999" timestamp="1619751384745" />
-    <state x="192" y="112" key="DiffContextDialog" timestamp="1619422895615">
-      <screen x="0" y="23" width="1920" height="996" />
+    <state x="518" y="97" key="CommitChangelistDialog2/0.23.1920.999@0.23.1920.999" timestamp="1622794425104" />
+    <state x="192" y="112" key="DiffContextDialog" timestamp="1622794411055">
+      <screen x="0" y="23" width="1920" height="999" />
     </state>
     <state x="192" y="112" key="DiffContextDialog/0.23.1920.996@0.23.1920.996" timestamp="1619422895615" />
-    <state x="192" y="112" key="DiffContextDialog/0.23.1920.999@0.23.1920.999" timestamp="1618566235406" />
+    <state x="192" y="112" key="DiffContextDialog/0.23.1920.999@0.23.1920.999" timestamp="1622794411055" />
     <state width="846" height="445" key="SwitcherDM" timestamp="1619430162905">
       <screen x="0" y="23" width="1920" height="996" />
     </state>
     <state width="846" height="445" key="SwitcherDM/0.23.1920.996@0.23.1920.996" timestamp="1619430162905" />
-    <state x="452" y="240" key="Vcs.Push.Dialog.v2" timestamp="1619751387551">
+    <state x="452" y="240" key="Vcs.Push.Dialog.v2" timestamp="1622794428366">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
     <state x="452" y="240" key="Vcs.Push.Dialog.v2/0.23.1920.996@0.23.1920.996" timestamp="1619430346012" />
     <state x="452" y="240" key="Vcs.Push.Dialog.v2/0.23.1920.997@0.23.1920.997" timestamp="1618931141336" />
-    <state x="452" y="240" key="Vcs.Push.Dialog.v2/0.23.1920.999@0.23.1920.999" timestamp="1619751387551" />
+    <state x="452" y="240" key="Vcs.Push.Dialog.v2/0.23.1920.999@0.23.1920.999" timestamp="1622794428366" />
     <state x="652" y="277" width="615" height="490" key="find.popup" timestamp="1616056630521">
       <screen x="0" y="23" width="1920" height="999" />
     </state>
